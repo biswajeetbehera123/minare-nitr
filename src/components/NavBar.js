@@ -54,8 +54,8 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
+                <a href="https://www.linkedin.com/company/mining-engineering-society-nit-rourkela/about/" target="_blank"><img src={navIcon1} alt="" /></a>
+                <a href="https://www.facebook.com/minare.nitr/" target="_blank"><img src={navIcon2} alt="" /></a>
                 <a href="https://www.instagram.com/minare.nitr/" target="_blank"><img src={navIcon3} alt="" /></a>
               </div>
               <HashLink to='#connect'>
