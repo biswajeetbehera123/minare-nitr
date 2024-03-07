@@ -56,7 +56,7 @@ export const Banner = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <span className="tagline">Welcome to MINARE!</span>
-                  <h1>{`Hi! This is Minare! `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                  <h1>{`Hi! This is Minare! `} <span className="txt-rotate" dataPeriod="1000" data-rotate='toRotate'><span className="wrap">{text}</span></span></h1>
                   <p>
                     Since 1979, NIT Rourkela's Mining Engineering department has led in academic excellence and industry contributions. Their upcoming event, MINARE-2023, promises to ignite passion and skills among future mining professionals. With nationwide participation, MINARE blends educational insights and fun, offering exposure to industry expertise and fostering holistic development.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
