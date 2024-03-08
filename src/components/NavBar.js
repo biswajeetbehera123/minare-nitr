@@ -6,7 +6,9 @@ import white from '../assets/img/mes-logo-white.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
+import RegisterForm from './register/index';
 import { HashLink } from 'react-router-hash-link';
+import { Modal } from 'react-bootstrap';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
@@ -15,6 +17,7 @@ export const NavBar = () => {
 
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+  const [showRegister, setShowRegister] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -59,8 +62,18 @@ export const NavBar = () => {
                 <a href="https://www.instagram.com/minare.nitr/" target="_blank"><img src={navIcon3} alt="" /></a>
               </div>
               <HashLink to='#connect'>
-                <button className="vvd"><span>Let’s Register</span></button>
+                <button
+                  className="vvd"
+                  onClick={() => setShowRegister(true)}
+                >
+                  <span>Let’s Register</span>
+                </button>
               </HashLink>
+              <Modal show={showRegister} onHide={() => setShowRegister(false)} centered>
+        <Modal.Body>
+          <RegisterForm />
+        </Modal.Body>
+      </Modal>
             </span>
           </Navbar.Collapse>
         </Container>
