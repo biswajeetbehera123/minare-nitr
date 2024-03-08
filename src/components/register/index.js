@@ -121,9 +121,9 @@ const RegisterForm = props => {
         return (
           <div>
             <h2>Your Information:</h2>
-            <p>Name: {userData.name}</p>
-            <p>Email: {userData.email}</p>
-            <p>Phone: {userData.phone}</p>
+            {/* <p>Name: name</p>
+            {/* <p>Email: {userData.email}</p>
+            <p>Phone: {userData.phone}</p> */}
           </div>
         );
     }
