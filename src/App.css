@@ -623,7 +623,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
   .wrapper {
-    padding-top: 00px;
+    padding-top: 100px;
     display: flex;
     flex-wrap: wrap;
     width: 90%;
