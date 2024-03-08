@@ -14,7 +14,8 @@ import image3 from "../assets/img/image 3.png";
 import Assets5 from "../assets/img/Asstet 5@4x 1.png";
 import image9 from "../assets/img/image 9.png";
 import image4 from "../assets/img/image 4.png";
-import image10 from "../assets/img/image 10.png";
+import image11 from "../assets/img/image 11.png";
+import image10 from "../assets/img/image 11.png";
 
 
 export const Skills = () => {
@@ -49,19 +50,43 @@ export const Skills = () => {
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={Assets1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <h5>OMC</h5>
                             </div>
                             <div className="item">
                                 <img src={image5} alt="Image" />
-                                <h5>Brand Identity</h5>
+                                <h5>MCL</h5>
                             </div>
                             <div className="item">
                                 <img src={image6} alt="Image" />
-                                <h5>Logo Design</h5>
+                                <h5>RC RUNGTA GROUP</h5>
                             </div>
                             <div className="item">
                                 <img src={image8} alt="Image" />
-                                <h5>Web Development</h5>
+                                <h5>JSW</h5>
+                            </div>
+                            <div className="item">
+                                <img src={image3} alt="Image" />
+                                <h5>OCPL</h5>
+                            </div>
+                            <div className="item">
+                                <img src={Assets5} alt="Image" />
+                                <h5>SMARTCHEM</h5>
+                            </div>
+                            <div className="item">
+                                <img src={image9} alt="Image" />
+                                <h5>IMFA</h5>
+                            </div>
+                            <div className="item">
+                                <img src={image4} alt="Image" />
+                                <h5>MOIL</h5>
+                            </div>
+                            <div className="item">
+                                <img src={image11} alt="Image" />
+                                <h5>ALTRADE</h5>
+                            </div>
+                            <div className="item">
+                                <img src={image10} alt="Image" />
+                                <h5>ADANI</h5>
                             </div>
                         </Carousel>
                     </div>
