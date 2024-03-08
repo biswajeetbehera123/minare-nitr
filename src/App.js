@@ -10,6 +10,8 @@ import { Footer } from "./components/Footer";
 import UserMenu from "./components/UserMenu";
 import Login from "./components/Login";
 import { AuthProvider } from "./context/authProvider";
+import Rzrpay from "./Rzrpay";
+
 
 function App() {
   return (
@@ -20,8 +22,10 @@ function App() {
         <Skills />
         <Projects />
         {/* <Contact /> */}
-        <Login />
-        <UserMenu />
+        {/* <Login /> */}
+        {/* <br />
+        <Rzrpay /> */}
+        {/* <UserMenu />  */}
         <Footer />
       </div>
     </AuthProvider>
