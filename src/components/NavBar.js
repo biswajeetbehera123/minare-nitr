@@ -47,10 +47,10 @@ export const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+              <Nav.Link href="/" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Sponsors</Nav.Link>
               <Nav.Link href="#project" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Events</Nav.Link>
-              <Nav.Link href="#skill" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Team</Nav.Link>
+              <Nav.Link href="/teams" className={activeLink === '/teams' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('/teams')}>Team</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
