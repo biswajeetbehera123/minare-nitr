@@ -623,7 +623,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
   .wrapper {
-    padding-top: 100px;
+    padding-top: 00px;
     display: flex;
     flex-wrap: wrap;
     width: 90%;
@@ -632,7 +632,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
   
   .card {
-    max-width: 280px;
+    max-width: 350px;
     border-radius: 15px !important;
     transition: 0.4s ease-out;
     margin-bottom: 40px;

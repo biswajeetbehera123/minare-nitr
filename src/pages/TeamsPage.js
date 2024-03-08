@@ -54,12 +54,38 @@ export default function Teams(){
             position: 'Director',
             imgurl: 'https://www.nitrkl.ac.in/assets/images/director.jpg'
         },
+       
         {
             id : '8',
             name: 'K Uma Maheshwar Rao',
             position: 'Director',
             imgurl: 'https://www.nitrkl.ac.in/assets/images/director.jpg'
         },
+        {
+            id : '9',
+            name: 'K Uma Maheshwar Rao',
+            position: 'Director',
+            imgurl: 'https://www.nitrkl.ac.in/assets/images/director.jpg'
+        },
+        {
+            id : '10',
+            name: 'K Uma Maheshwar Rao',
+            position: 'Director',
+            imgurl: 'https://www.nitrkl.ac.in/assets/images/director.jpg'
+        },
+        {
+            id : '11',
+            name: 'K Uma Maheshwar Rao',
+            position: 'Director',
+            imgurl: 'https://www.nitrkl.ac.in/assets/images/director.jpg'
+        },
+        {
+            id : '12',
+            name: 'K Uma Maheshwar Rao',
+            position: 'Director',
+            imgurl: 'https://www.nitrkl.ac.in/assets/images/director.jpg'
+        },
+       
     ]
 
     return(
