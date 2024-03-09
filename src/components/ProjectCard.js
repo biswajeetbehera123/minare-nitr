@@ -8,6 +8,7 @@ export const ProjectCard = ({ title, description, imgUrl }) => {
         <div className="proj-txtx">
           <h4>{title}</h4>
           <span>{description}</span>
+          <footer class="proj-footer"><a href="path_to_file" download="RulesToFOLLOW"><button id="proj-button">RulesToFollow</button></a></footer>
         </div>
       </div>
     </Col>
