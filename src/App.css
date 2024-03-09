@@ -467,6 +467,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+#slideInUp
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: scroll;
+}
 
 /************ Projects Css ************/
 .contact {
