@@ -440,6 +440,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 0;
   width: 100%;
 }
+#proj-button{
+  border:2px black dashed;
+  color:white;
+  padding:24px 50px;
+  border-radius:55px 0px 0px 55px;
+  opacity:0.5;
+  background-color: #891652;
+}
+#proj-button:hover{
+  opacity:1;
+}
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
   opacity: 1;
