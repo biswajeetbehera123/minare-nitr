@@ -447,6 +447,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius:55px;
   opacity:0.5;
   background-color: #891652;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 #proj-button:hover{
   opacity:1;
