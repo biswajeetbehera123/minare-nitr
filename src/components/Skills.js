@@ -16,6 +16,10 @@ import image9 from "../assets/img/image 9.png";
 import image4 from "../assets/img/image 4.png";
 import image11 from "../assets/img/image 11.png";
 import image10 from "../assets/img/image 11.png";
+import R from "../assets/img/R.png";
+import OIP from "../assets/img/OIP.png";
+import JSW from "../assets/img/JSW.png";
+
 
 
 export const Skills = () => {
@@ -57,7 +61,7 @@ export const Skills = () => {
                                 <h5>MCL</h5>
                             </div>
                             <div className="item">
-                                <img src={image6} alt="Image" />
+                                <img src={R} alt="Image" />
                                 <h5>RC RUNGTA GROUP</h5>
                             </div>
                             <div className="item">
@@ -77,7 +81,7 @@ export const Skills = () => {
                                 <h5>IMFA</h5>
                             </div>
                             <div className="item">
-                                <img src={image9} alt="Image" />
+                                <img src={OIL} alt="Image" />
                                 <h5>MOIL</h5>
                             </div>
                             <div className="item">
