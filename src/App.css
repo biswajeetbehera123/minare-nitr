@@ -467,7 +467,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 div#slideInUp.animate_animated.animate_slideInUp.tab-content
 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   overflow: scroll;
 }
