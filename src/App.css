@@ -415,11 +415,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-imgbx {
   position: relative;
   border-radius: 30px;
-  overflow: scroll;
+  overflow: hidden;
   margin-bottom: 24px;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .proj-imgbx::before {
   content: "";
@@ -467,7 +464,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
-#slideInUp
+div#slideInUp.animate_animated.animate_slideInUp.tab-content
 {
   display: flex;
   flex-direction: column;
