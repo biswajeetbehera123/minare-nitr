@@ -6,6 +6,9 @@ import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import ROP from "../assets/img/Rock on pap.pdf";
+import OAQ from "../assets/img/Ore-acle Quest.pdf";
+import CO from "../assets/img/Case Ore rules.pdf";
 
 export const Projects = () => {
 
@@ -24,6 +27,7 @@ export const Projects = () => {
       title: "Ore-acle Quest:Quiz",
       description: "Join us for Ore-acle Quest, an exciting mining-themed quiz event at Minare 2024. Test your knowledge and compete against other teams in a battle of intellect and skill. Will your team emerge victorious and claim the title of Ore-acle Quest champion? Don't miss out on this thrilling opportunity to showcase your mining expertise! Register now and prepare to embark on an unforgettable journey through the fascinating world of mining",
       imgUrl: projImg1,
+      Rules:OAQ,
     },
     {
       title: "Mine Matrix:The Traesure Hunt",
@@ -34,11 +38,13 @@ export const Projects = () => {
       title: "Rock-On-Pap",
       description: "Experience the excitement of Minare 2024, organized by NIT Rourkela, where innovation meets opportunity. Showcase your groundbreaking research in our technical paper presentation, network with industry leaders, and contribute to the forefront of technological advancement. Elevate your academic and professional profile while engaging in a dynamic exchange of ideas. Don't miss out on this chance to be part of an extraordinary event shaping the future of technology",
       imgUrl: projImg3,
+      Rules:ROP,
     },
     {
       title: "Case Ore-einted",
       description: "Minare 24’ the annual Geo-mining fest at NIT Rourkela hosts the annual Case Ore-iented competition. Participants tackle real-world mining challenges, covering exploration, extraction, and processing, safety, and community engagement. This platform allows experts to demonstrate critical thinking and problem-solving skills, fostering collaboration and innovation in the mining industry. It emphasizes sustainable practices and responsible resource management, contributing to the advancement of the sector. Join us for an unforgettable event. Don't miss out!",
       imgUrl: projImg2,
+      Rules:CO,
     },
     
     {
