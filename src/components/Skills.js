@@ -12,12 +12,11 @@ import image6 from "../assets/img/image 6.png";
 import image8 from "../assets/img/image 8.png";
 import image3 from "../assets/img/image 3.png";
 import im2 from "../assets/img/im2.png";
-import image9 from "../assets/img/image 9.png";
+import im3 from "../assets/img/im3.jpg";
 import image4 from "../assets/img/image 4.png";
 import image11 from "../assets/img/image 11.png";
 import image10 from "../assets/img/image 11.png";
 import R from "../assets/img/R.png";
-
 import JSW from "../assets/img/JSW.png";
 
 
@@ -80,14 +79,9 @@ export const Skills = () => {
                                 <img src={image4} alt="Image" />
                                 <h5>IMFA</h5>
                             </div>
-                            
                             <div className="item">
-                                <img src={image11} alt="Image" />
-                                <h5>ALTRADE</h5>
-                            </div>
-                            <div className="item">
-                                <img src={image10} alt="Image" />
-                                <h5>ADANI</h5>
+                                <img src={im3} alt="Image" />
+                                <h5>moil</h5>
                             </div>
                         </Carousel>
                     </div>
