@@ -6,12 +6,12 @@ import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png";
-import Assets1 from "../assets/img/Asset 1@4x 2.png";
+import im1 from "../assets/img/im1.png";
 import image5 from "../assets/img/image 5.png";
 import image6 from "../assets/img/image 6.png";
 import image8 from "../assets/img/image 8.png";
 import image3 from "../assets/img/image 3.png";
-import Assets5 from "../assets/img/Asstet 5@4x 1.png";
+import im2 from "../assets/img/im2.png";
 import image9 from "../assets/img/image 9.png";
 import image4 from "../assets/img/image 4.png";
 import image11 from "../assets/img/image 11.png";
@@ -49,7 +49,7 @@ export const Skills = () => {
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={Assets1} alt="Image" />
+                                <img src={im1} alt="Image" />
                                 <h5>OMC</h5>
                             </div>
                             <div className="item">
@@ -69,7 +69,7 @@ export const Skills = () => {
                                 <h5>OCPL</h5>
                             </div>
                             <div className="item">
-                                <img src={Assets5} alt="Image" />
+                                <img src={im2} alt="Image" />
                                 <h5>SMARTCHEM</h5>
                             </div>
                             <div className="item">
