@@ -10,7 +10,7 @@ import ROP from "../assets/img/Rock on pap.pdf";
 import OAQ from "../assets/img/Ore-acle Quest.pdf";
 import CO from "../assets/img/Case Ore rules.pdf";
 
-export const Projects = () => {
+export const GL = () => {
 
   const projects = [
     {

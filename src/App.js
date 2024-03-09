@@ -7,6 +7,7 @@ import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { GL } from "./components/GL";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Projects />
       {/* <Contact /> */}
       <Footer />
+      <GL/>
     </div>
   );
 }
