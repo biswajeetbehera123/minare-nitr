@@ -415,7 +415,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-imgbx {
   position: relative;
   border-radius: 30px;
-  overflow: scroll;
+  overflow: hidden;
   margin-bottom: 24px;
 }
 .proj-imgbx::before {
@@ -439,6 +439,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  overflow:scroll
 }
 #proj-button{
   border:2px black solid;
