@@ -23,7 +23,7 @@ export const GL = () => {
         title: "Optimizing Operations from Above: UAV WORKSHOP",
         description: "Join MINARE 24' for an immersive workshop on drone technology in mining.Tailored for professionals and enthusiasts, explore drones' cutting-edge applications, reshaping traditional practices for operational efficiency and sustainability. Gain invaluable insights into drones' transformative potential in  mining, ensuring you stay ahead of the curve. Reserve your spot now for innovation and excellence in mining.",
         imgUrl: projImg3,
-        RulesToFollow:"Event-the-Event",
+        RulesToFollow:"Enjoy-the-Event",
       },
     
     
