@@ -14,18 +14,19 @@ export const GL = () => {
 
   const projects = [
     {
+      title: "Optimizing Operations from Above: UAV WORKSHOP",
+      description: "Join MINARE 24' for an immersive workshop on drone technology in mining.Tailored for professionals and enthusiasts, explore drones' cutting-edge applications, reshaping traditional practices for operational efficiency and sustainability. Gain invaluable insights into drones' transformative potential in  mining, ensuring you stay ahead of the curve. Reserve your spot now for innovation and excellence in mining.",
+      imgUrl: projImg3,
+      RulesToFollow:"Enjoy-the-Event",
+    },
+    
+    {
         title: "Minecarft:The Roadmap to start a mine",
         description: "Embark on a transformative journey into the world of mining entrepreneurship at our exclusive workshop event, where luminous insights and polished strategies await. Join Minare 2024 to share the secrets of prospecting for opportunities, navigating the innovation minefield, and mastering financial fluency. This glittering experience extends beyond workshops, offering a gemstone gala of networking opportunities, where connections with fellow miners, investors, and visionaries could be the golden key to your entrepreneurial kingdom. Secure your spot now and let the mining spirit within you shine like a radiant diamond in the rough!",
         imgUrl: projImg3,
         RulesToFollow:"Enjoy-the-Event",
       },
-      {
-        title: "Optimizing Operations from Above: UAV WORKSHOP",
-        description: "Join MINARE 24' for an immersive workshop on drone technology in mining.Tailored for professionals and enthusiasts, explore drones' cutting-edge applications, reshaping traditional practices for operational efficiency and sustainability. Gain invaluable insights into drones' transformative potential in  mining, ensuring you stay ahead of the curve. Reserve your spot now for innovation and excellence in mining.",
-        imgUrl: projImg3,
-        RulesToFollow:"Enjoy-the-Event",
-      },
-    
+      
     
     
    
