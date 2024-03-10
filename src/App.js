@@ -7,28 +7,34 @@ import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
-import UserMenu from "./components/UserMenu";
-import Login from "./components/Login";
 import { AuthProvider } from "./context/authProvider";
-import Rzrpay from "./Rzrpay";
-
+import RegisterForm from "./components/RegisterForm";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <AuthProvider>
-      <div className="App">
+    <BrowserRouter>
+      <AuthProvider>
         <NavBar />
-        <Banner />
-        <Skills />
-        <Projects />
-        {/* <Contact /> */}
-        {/* <Login /> */}
-        {/* <br />
-        <Rzrpay /> */}
-        {/* <UserMenu />  */}
+        
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <div className="App">
+                  <Banner />
+                  <Skills />
+                  <Projects />
+                  {/* <Contact /> */}
+                </div>
+              }
+            />
+            <Route path="/register" element={<RegisterForm />} />
+          </Routes>
+        
         <Footer />
-      </div>
-    </AuthProvider>
+      </AuthProvider>
+    </BrowserRouter>
   );
 }
 
