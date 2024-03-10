@@ -15,7 +15,7 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     const unsubscribed = auth.onIdTokenChanged((user) => {
-      console.log('[From AuthProvider]', { user });
+      // console.log('[From AuthProvider]', { user });
       if (user?.uid) {
         setUser(user);
         if (user.accessToken !== localStorage.getItem('accessToken')) {
@@ -42,7 +42,8 @@ export const AuthProvider = ({ children }) => {
 
   return (
     <AuthContext.Provider value={{ user, auth }}> {/* Include auth object in context */}
-      {isLoading ? <CircularProgress /> : children}
+      {/* {isLoading ? <CircularProgress /> : children} */}
+      {children}
     </AuthContext.Provider>
   );
 };
