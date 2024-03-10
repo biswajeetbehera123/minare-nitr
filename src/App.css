@@ -561,7 +561,7 @@ div#slideInUp.animate_animated.animate_slideInUp.tab-content
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
+  padding: 20px 0 50px 0;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
@@ -637,3 +637,4 @@ div#slideInUp.animate_animated.animate_slideInUp.tab-content
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
