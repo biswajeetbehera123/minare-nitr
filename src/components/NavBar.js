@@ -7,7 +7,7 @@ import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import { useNavigate } from "react-router-dom";
-// import {getAccomodationData, getNormalData} from '../firebase/db'
+import {getAccomodationData, getNormalData} from '../firebase/db'
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -33,14 +33,21 @@ export const NavBar = () => {
     setActiveLink(value);
   };
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const accomodationData = await getAccomodationData();
-  //     const normalData = await getNormalData();
-  //     console.log(accomodationData, normalData);
-  //   };
-  //   fetchData();
-  // }, []);
+  useEffect(() => {
+    const fetchData = async () => {
+      const accomodationData = [];
+     await getAccomodationData((data)=>{
+      accomodationData.push(Object.values(data));
+      // console.log(accomodationData);
+     });
+      const normalData = [];
+      await getNormalData((data)=>{
+        normalData.push(Object.values(data));
+        // console.log(normalData);
+      });
+    };
+    fetchData();
+  }, []);
 
   const handleNavigate = () => {
     navigate("/register");

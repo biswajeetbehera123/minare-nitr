@@ -14,9 +14,22 @@ const Login = () => {
 
   const handleLoginWithGoogle = async () => {
     const provider = new GoogleAuthProvider();
-    const res = await signInWithPopup(auth, provider);
-    // console.log({ res }, ["from Login.js"]);
+    try {
+      const res = await signInWithPopup(auth, provider);
+      // if (res.user) {
+      //   navigate("/");
+      // }
+    } catch (error) {
+      if (error.code === "auth/cancelled-popup-request") {
+        console.log("Popup authentication was cancelled by the user.");
+        // Handle cancellation gracefully, e.g., show a message to the user
+      } else {
+        console.error("Error signing in with Google:", error);
+        // Handle other authentication errors
+      }
+    }
   };
+  
 
   // useEffect(() => {
   //   if (user?.uid) {

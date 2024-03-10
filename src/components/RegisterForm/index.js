@@ -133,7 +133,7 @@ const RegisterForm = () => {
   };
 
   React.useEffect(() => {
-    if (user) {
+    if (user && user.email) {
       setActiveStep(1); // Directly switch to step 1 if user is present
     }
   }, [user]);

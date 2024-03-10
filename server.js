@@ -61,3 +61,8 @@ router.get("/", (req, res) => {
 
 router.post("/register", createRegistration)
 router.post("/paymentCapture", paymentCapture)
+
+// phonepay Route
+// const phonepeRoute = require('./src/routes/phonepe/phonepeRoute')
+// app.use("/api", phonepeRoute);
+

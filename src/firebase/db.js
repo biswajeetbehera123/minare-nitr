@@ -32,15 +32,18 @@ export const normalRegistration = async (data) => {
 export const getAccomodationData = async (callback) => {
   const userDataRef = ref(db, "AccomodationRegistration");
   onValue(userDataRef, (snapshot) => {
-    console.log(snapshot.val())
+    // console.log(snapshot.val())
     const data = snapshot.val();
     if (typeof callback === 'function') {
       callback(data);
     }
-    console.log(data);
+    // convert the data to array
+    // console.log("data in array", Object.values(data));
+    return Object.values(data);
   }, {
     onlyOnce: true // Read data only once
   });
+  
 };
 
 export const getNormalData = async (callback) => {
