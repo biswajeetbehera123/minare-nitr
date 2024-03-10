@@ -6,7 +6,7 @@ import { AuthContext } from '../context/authProvider';
 
 const UserMenu = () => {
   const {
-    user: { displayName, photoURL, auth },
+    user: { displayName, photoURL, auth, email },
   } = useContext(AuthContext);
   const [anchorEl, setAnchorEl] = useState(null);
 
@@ -30,12 +30,12 @@ const UserMenu = () => {
         sx={{ display: 'flex', '&:hover': { cursor: 'pointer' } }}
         onClick={handleClick}
       >
-        <Typography>{displayName}</Typography>
         <Avatar
           alt='avatar'
           src={photoURL}
-          sx={{ width: 24, height: 24, marginLeft: '5px' }}
+          sx={{ width: 24, height: 24, marginRight: '5px' }}
         />
+        <Typography>{email}</Typography>
       </Box>
       <Menu
         id='basic-menu'

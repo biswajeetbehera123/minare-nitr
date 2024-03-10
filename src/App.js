@@ -10,6 +10,7 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 
 
+
 function App() {
   return (
 
@@ -23,6 +24,36 @@ function App() {
         {/* <Contact /> */}
         <Footer />
       </div>
+
+
+import { AuthProvider } from "./context/authProvider";
+import RegisterForm from "./components/RegisterForm";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <AuthProvider>
+        <NavBar />
+        
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <div className="App">
+                  <Banner />
+                  <Skills />
+                  <Projects />
+                  {/* <Contact /> */}
+                </div>
+              }
+            />
+            <Route path="/register" element={<RegisterForm />} />
+          </Routes>
+        
+        <Footer />
+      </AuthProvider>
+    </BrowserRouter>
 
   );
 }

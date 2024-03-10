@@ -15,7 +15,11 @@ const createRegistration = async (req, res) => {
 
   // setting up options for razorpay order.
   const options = {
-    amount: 500,
+    handler: async (response) => {
+      res.json(response);
+      console.log("payment successful!")
+    },
+    amount: req.body.accommodation ? 100000 : 50000, // Adjust amount based on accommodation
     currency: "INR",
     receipt: "receipt#1",
     payment_capture: 1,
