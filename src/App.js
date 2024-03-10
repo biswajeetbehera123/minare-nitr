@@ -8,16 +8,12 @@ import { Projects } from "./components/Projects";
 import { GL } from "./components/GL";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
-import UserMenu from "./components/UserMenu";
-import Login from "./components/Login";
-import { AuthProvider } from "./context/authProvider";
-import Rzrpay from "./Rzrpay";
 
 
 function App() {
   return (
 
-    <AuthProvider>
+    
       <div className="App">
         <NavBar />
         <Banner />
@@ -25,13 +21,8 @@ function App() {
         <Projects />
         <GL />
         {/* <Contact /> */}
-        {/* <Login /> */}
-        {/* <br />
-        <Rzrpay /> */}
-        {/* <UserMenu />  */}
         <Footer />
       </div>
-    </AuthProvider>
 
   );
 }
