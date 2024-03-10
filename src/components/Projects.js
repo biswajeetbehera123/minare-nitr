@@ -9,9 +9,9 @@ import TrackVisibility from 'react-on-screen';
 import ROP from "../assets/img/Rock on pap.pdf";
 import OAQ from "../assets/img/Ore-acle Quest.pdf";
 import CO from "../assets/img/Case Ore rules.pdf";
-import MBC from "../assets/img/Mine Bots Challenge.pdf U";
-import MF from "../assets/img/Mine Forge.pdf U";
-import MM from "../assets/img/Mine Matrix_2.pdf U";
+import MBC from "../assets/img/MBC.pdf U";
+import MF from "../assets/img/MF.pdf U";
+import MM from "../assets/img/MM.pdf U";
 
 export const Projects = () => {
 
