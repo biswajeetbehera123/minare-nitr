@@ -9,6 +9,9 @@ import TrackVisibility from 'react-on-screen';
 import ROP from "../assets/img/Rock on pap.pdf";
 import OAQ from "../assets/img/Ore-acle Quest.pdf";
 import CO from "../assets/img/Case Ore rules.pdf";
+import MBC from "../assets/img/Mine Bots Challenge.pdf U";
+import MF from "../assets/img/Mine Forge.pdf U";
+import MM from "../assets/img/Mine Matrix_2.pdf U";
 
 export const Projects = () => {
 
@@ -17,11 +20,13 @@ export const Projects = () => {
       title: "MineForge",
       description: "Are you ready to step into the shoes of a future mine manager and confront the complexities of the mining industry? Join us at MINARE'24 for an immersive simulation challenge. Mine Manager Simulation Challenge offers aspiring mine managers an immersive opportunity to navigate the complexities of the mining industry through simulated scenarios. Participants will engage in realistic exercises including mining planning and development simulations, production optimization challenges, DGMS inspection drills, and accidental scenario exercises, honing their decision-making, problem-solving, and crisis management skills. This event provides hands-on learning, industry insights,and networking opportunities, empowering future mine managers to prepare for leadership roles in the evolving mining sector.",
       imgUrl: projImg1,
+      Rules:MF,
     },
     {
       title: "MineBots Challenge:Mining Robotics Challenge",
       description: "Join MINARE 24' for an electrifying journey into the fusion of robotics and mining at MineBots. Crafted for pioneers and visionaries, our event illuminates the forefront of robotics in mining, redefining practices for efficiency and sustainability. Unravel how robotics propel operational growth and seize this chance to unleash limitless possibilities. Secure your transformative voyage towards innovation and excellence in mining at MineBots.",
       imgUrl: projImg1,
+      Rules:MBC,
     },
     {
       title: "Ore-acle Quest:Quiz",
@@ -33,6 +38,7 @@ export const Projects = () => {
       title: "Mine Matrix:The Traesure Hunt",
       description: "Welcome to Mine Matrix: The Treasure Hunt, an exhilarating event that will test your problem-solving skills and teamwork like never before! Embark on an epic adventure through a labyrinth of clues and challenges, all set within the intriguing world of mining. Gather your team, sharpen your minds, and prepare to unravel mysteries, crack codes, and unearth hidden treasures. With each step, you'll delve deeper into the matrix, racing against time to emerge victorious. Will your team be the one to conquer the Mine Matrix and claim the ultimate prize? Join us for an unforgettable journey of exploration, discovery, and triumph at Mine Matrix: The Treasure Hunt",
       imgUrl: projImg2,
+      Rules:MM,
     },
     {
       title: "Rock-On-Pap",
