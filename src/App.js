@@ -22,6 +22,7 @@ function App() {
         <Banner />
         <Skills />
         <Projects />
+        <GL/>
         {/* <Contact /> */}
         {/* <Login /> */}
         {/* <br />
