@@ -1,8 +1,8 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
+/*import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg3 from "../assets/img/project-img3.png";*/
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -13,14 +13,14 @@ export const GL = () => {
     {
       title: "Optimizing Operations from Above: UAV WORKSHOP",
       description: "Join MINARE 24' for an immersive workshop on drone technology in mining.Tailored for professionals and enthusiasts, explore drones' cutting-edge applications, reshaping traditional practices for operational efficiency and sustainability. Gain invaluable insights into drones' transformative potential in  mining, ensuring you stay ahead of the curve. Reserve your spot now for innovation and excellence in mining.",
-      imgUrl: projImg3,
+      imgUrl: "https://res.cloudinary.com/daho6qhd0/image/upload/v1710151101/minare/g_b9m8ol.png",
       RulesToFollow:"Enjoy-the-Event",
     },
 
     {
         title: "Minecarft:The Roadmap to start a mine",
         description: "Embark on a transformative journey into the world of mining entrepreneurship at our exclusive workshop event, where luminous insights and polished strategies await. Join Minare 2024 to share the secrets of prospecting for opportunities, navigating the innovation minefield, and mastering financial fluency. This glittering experience extends beyond workshops, offering a gemstone gala of networking opportunities, where connections with fellow miners, investors, and visionaries could be the golden key to your entrepreneurial kingdom. Secure your spot now and let the mining spirit within you shine like a radiant diamond in the rough!",
-        imgUrl: projImg3,
+        imgUrl: "https://res.cloudinary.com/daho6qhd0/image/upload/v1710151128/minare/h_gxalom.png",
         RulesToFollow:"Enjoy-the-Event",
       },
 

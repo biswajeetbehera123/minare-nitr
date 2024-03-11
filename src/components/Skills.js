@@ -6,18 +6,9 @@ import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
-import im1 from "../assets/img/im1.png";
-import image5 from "../assets/img/image 5.png";
-import image6 from "../assets/img/image 6.png";
-import image8 from "../assets/img/image 8.png";
-import image3 from "../assets/img/image 3.png";
-import im2 from "../assets/img/im2.png";
-import im3 from "../assets/img/im3.jpg";
-import image4 from "../assets/img/image 4.png";
 
 
-import R from "../assets/img/R.png";
-import JSW from "../assets/img/JSW.png";
+
 
 
 export const Skills = () => {
@@ -51,33 +42,37 @@ export const Skills = () => {
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                         <div className="item">
-                                <img src={im1} alt="Image" />
+                                <img src={"https://res.cloudinary.com/daho6qhd0/image/upload/v1710151138/minare/im1_yjh1pv.png"} alt="Image" />
                                 <h5>OMC</h5>
                             </div>
                             <div className="item">
-                                <img src={image5} alt="Image" />
+                                <img src={"https://res.cloudinary.com/daho6qhd0/image/upload/v1710151428/minare/image_5_yzikr4.png"} alt="Image" />
                                 <h5>MCL</h5>
                             </div>
                             <div className="item">
-                                <img src={R} alt="Image" />
+                                <img src={"https://res.cloudinary.com/daho6qhd0/image/upload/v1710151255/minare/R_zsvmzk.png"} alt="Image" />
                                 <h5>RC RUNGTA GROUP</h5>
                             </div>
                             <div className="item">
-                                <img src={image8} alt="Image" />
+                                <img src={"https://res.cloudinary.com/daho6qhd0/image/upload/v1710151240/minare/JSW_uavz85.png"} alt="Image" />
                                 <h5>JSW</h5>
                             </div>
                             
                             <div className="item">
-                            <img src={im2} alt="Image" />
+                            <img src={"https://res.cloudinary.com/daho6qhd0/image/upload/v1710151151/minare/im2_zwpdx6.png"} alt="Image" />
                                 <h5>SMARTCHEM</h5>
                             </div>
                             <div className="item">
-                            <img src={image4} alt="Image" />
+                            <img src={"https://res.cloudinary.com/daho6qhd0/image/upload/v1710151378/minare/image_4_qhx2kn.png"} alt="Image" />
                                 <h5>IMFA</h5>
                             </div>
                             <div className="item">
-                            <img src={im3} alt="Image" />
+                            <img src={"https://res.cloudinary.com/daho6qhd0/image/upload/v1710151194/minare/im3_kokoeu.jpg"} alt="Image" />
                                 <h5>moil</h5>
+                            </div>
+                            <div className="item">
+                            <img src={"https://res.cloudinary.com/daho6qhd0/image/upload/v1710151564/minare/ucil_gifzvz.jpg"} alt="Image" />
+                                <h5>ucil</h5>
                             </div>
                                 </Carousel>
                     </div>
