@@ -57,6 +57,10 @@ export const Skills = () => {
                                 <img src={"https://res.cloudinary.com/daho6qhd0/image/upload/v1710151240/minare/JSW_uavz85.png"} alt="Image" />
                                 <h5>JSW</h5>
                             </div>
+                            <div className="item">
+                                <img src={"https://res.cloudinary.com/daho6qhd0/image/upload/v1710151213/minare/image_3_ivc8wj.png"} alt="Image" />
+                                <h5>OCPL</h5>
+                            </div>
                             
                             <div className="item">
                             <img src={"https://res.cloudinary.com/daho6qhd0/image/upload/v1710151151/minare/im2_zwpdx6.png"} alt="Image" />
