@@ -10,6 +10,7 @@ const UserContextProvider = props => {
       collegeName: "",
       branchOfStudy: "",
       yearOfGraduation: "",
+      transactionId: "",
     },
     errors: {}
   });
