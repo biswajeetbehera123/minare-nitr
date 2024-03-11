@@ -11,6 +11,7 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { AuthContext } from "../../context/authProvider";
 import { UserContext } from "./UserContext";
+import UserMenu from "../UserMenu";
 
 const defaultTheme = createTheme();
 
@@ -65,7 +66,7 @@ const UserData = ({submit , onSubmitUserData}) => {
               alignItems: "center",
             }}
           >
-            <Avatar sx={{ m: 1 }}>
+            {/* <Avatar sx={{ m: 1 }}>
               {user.photoURL ? (
                 <img src={user.photoURL} alt="avatar" />
               ) : (
@@ -74,7 +75,8 @@ const UserData = ({submit , onSubmitUserData}) => {
             </Avatar>
             <Typography color={"black"} variant="h5">
               {user.displayName}
-            </Typography>
+            </Typography> */}
+            <UserMenu />
           </Box>
           <Box
             component="form"
