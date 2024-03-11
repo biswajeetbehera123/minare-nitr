@@ -6,6 +6,19 @@ import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import ROP from "../assets/img/Rock on pap.pdf";
+import OAQ from "../assets/img/Ore-acle Quest.pdf";
+import CO from "../assets/img/Case Ore rules.pdf";
+import Mbc from "../assets/img/Mbc.pdf";
+import Mf from "../assets/img/Mf.pdf";
+import Mm from "../assets/img/Mm.pdf";
+import a from "../assets/img/a.png";
+import b from "../assets/img/b.png";
+import c from "../assets/img/c.png";
+import d from "../assets/img/d.png";
+import e from "../assets/img/e.png";
+
+
 
 export const Projects = () => {
 
