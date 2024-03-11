@@ -6,8 +6,11 @@ import white from "../assets/img/mes-logo-white.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
-import { useNavigate } from "react-router-dom";
+
+import { Router, useNavigate } from "react-router-dom";
 import {getAccomodationData, getNormalData} from '../firebase/db'
+
+
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -54,6 +57,7 @@ export const NavBar = () => {
   };
 
   return (
+    
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="/">
@@ -75,7 +79,7 @@ export const NavBar = () => {
               Home
             </Nav.Link>
             <Nav.Link
-              href="#skills"
+              href="#"
               className={
                 activeLink === "skills" ? "active navbar-link" : "navbar-link"
               }
@@ -93,11 +97,11 @@ export const NavBar = () => {
               Events
             </Nav.Link>
             <Nav.Link
-              href="#skill"
-              className={
-                activeLink === "projects" ? "active navbar-link" : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("projects")}
+             href="/teams" 
+             className={
+              activeLink === '/teams' ? 'active navbar-link' : 'navbar-link'
+              } 
+              onClick={() => onUpdateActiveLink('teams')}
             >
               Team
             </Nav.Link>
@@ -126,5 +130,6 @@ export const NavBar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    
   );
 };

@@ -7,34 +7,32 @@ import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import Teams from './pages/TeamsPage';
 import { AuthProvider } from "./context/authProvider";
 import RegisterForm from "./components/RegisterForm";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
-      <AuthProvider>
-        <NavBar />
-        
+    <div className="App">
+      <BrowserRouter>
+          <NavBar />
+          
           <Routes>
-            <Route
-              path="/"
-              element={
-                <div className="App">
-                  <Banner />
-                  <Skills />
-                  <Projects />
-                  {/* <Contact /> */}
-                </div>
-              }
-            />
+            <Route path='/' element={
+              <>
+                <Banner />
+                <Skills />
+                <Projects />
+                {/* <Contact /> */}
+              </>
+            } />
+            <Route path="/teams" element={<Teams /> } />
             <Route path="/register" element={<RegisterForm />} />
           </Routes>
-        
+        </BrowserRouter>
         <Footer />
-      </AuthProvider>
-    </BrowserRouter>
+    </div>
   );
 }
 
