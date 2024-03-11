@@ -27,7 +27,7 @@ const UserMenu = () => {
   return (
     <>
       <Box
-        sx={{ display: 'flex', '&:hover': { cursor: 'pointer' } }}
+        sx={{ display: 'flex' , flexDirection: 'row', '&:hover': { cursor: 'pointer' } }}
         onClick={handleClick}
       >
         <Avatar
@@ -35,7 +35,7 @@ const UserMenu = () => {
           src={photoURL}
           sx={{ width: 24, height: 24, marginRight: '5px' }}
         />
-        <Typography>{email}</Typography>
+        <Typography color={'black'} >{email}</Typography>
       </Box>
       <Menu
         id='basic-menu'
