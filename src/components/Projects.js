@@ -12,8 +12,8 @@ import CO from "../assets/img/Case Ore rules.pdf";
 import Mbc from "../assets/img/MBC.pdf";
 import Mf from "../assets/img/MF.pdf";
 import Mm from "../assets/img/MM.pdf";
+import b from "../assets/img/b.jpg"
 import a from "../assets/img/a.png";
-import b from "../assets/img/b.png";
 import c from "../assets/img/c.png";
 import d from "../assets/img/d.png";
 import e from "../assets/img/e.png";
@@ -31,7 +31,7 @@ export const Projects = () => {
       RulesToFollow:"Rules-To-Follow",
     },
     {
-      title: "MineBots Challenge:Mining Robotics Challenge",
+      title: "Geobotics:The Robot Challenge",
       description: "Join MINARE 24' for an electrifying journey into the fusion of robotics and mining at MineBots. Crafted for pioneers and visionaries, our event illuminates the forefront of robotics in mining, redefining practices for efficiency and sustainability. Unravel how robotics propel operational growth and seize this chance to unleash limitless possibilities. Secure your transformative voyage towards innovation and excellence in mining at MineBots.",
       imgUrl: b,
       Rules:Mbc,
@@ -71,6 +71,7 @@ export const Projects = () => {
     <section className="project" id="project">
       <Container>
         <Row>
+        
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
