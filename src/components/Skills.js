@@ -1,6 +1,14 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import meter1 from "../assets/sponsors/1.jpg";
+import meter2 from "../assets/sponsors/2.jpg";
+import meter3 from "../assets/sponsors/3.png";
+import meter4 from "../assets/sponsors/4.png";
+import meter5 from "../assets/sponsors/5.png";
+import meter6 from "../assets/sponsors/6.png";
+import meter7 from "../assets/sponsors/7.png";
+import meter8 from "../assets/sponsors/8.png";
+import meter9 from "../assets/sponsors/9.png";
+import meter10 from "../assets/sponsors/10.png";
+
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
@@ -39,19 +47,43 @@ export const Skills = () => {
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <h5>OMC</h5>
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
+                                <h5>SmartChem Technologies Ltd</h5>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                                <h5>OCPL</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={meter4} alt="Image" />
+                                <h5>IMFA</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter5} alt="Image" />
+                                <h5>MCL</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter6} alt="Image" />
+                                <h5>RC Rungta Group</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter7} alt="Image" />
+                                <h5>SBI</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter8} alt="Image" />
+                                <h5>JSW</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter9} alt="Image" />
+                                <h5>MOIL Limited</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter10} alt="Image" />
+                                <h5>Adani Group</h5>
                             </div>
                         </Carousel>
                     </div>
