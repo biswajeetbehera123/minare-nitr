@@ -61,23 +61,7 @@ export const Skills = () => {
                                 <img src={"https://res.cloudinary.com/daho6qhd0/image/upload/v1710151213/minare/image_3_ivc8wj.png"} alt="Image" />
                                 <h5>OCPL</h5>
                             </div>
-                            
-                            <div className="item">
-                            <img src={"https://res.cloudinary.com/daho6qhd0/image/upload/v1710151151/minare/im2_zwpdx6.png"} alt="Image" />
-                                <h5>SMARTCHEM</h5>
-                            </div>
-                            <div className="item">
-                            <img src={"https://res.cloudinary.com/daho6qhd0/image/upload/v1710151378/minare/image_4_qhx2kn.png"} alt="Image" />
-                                <h5>IMFA</h5>
-                            </div>
-                            <div className="item">
-                            <img src={"https://res.cloudinary.com/daho6qhd0/image/upload/v1710151194/minare/im3_kokoeu.jpg"} alt="Image" />
-                                <h5>moil</h5>
-                            </div>
-                            <div className="item">
-                            <img src={"https://res.cloudinary.com/daho6qhd0/image/upload/v1710151564/minare/ucil_gifzvz.jpg"} alt="Image" />
-                                <h5>ucil</h5>
-                            </div>
+                  
                                 </Carousel>
                     </div>
                 </div>
