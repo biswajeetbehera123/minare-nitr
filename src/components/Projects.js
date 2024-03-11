@@ -17,6 +17,7 @@ import b from "../assets/img/b.png";
 import c from "../assets/img/c.png";
 import d from "../assets/img/d.png";
 import e from "../assets/img/e.png";
+import f from "../assets/img/f.png";
 
 
 
@@ -60,7 +61,7 @@ export const Projects = () => {
     {
       title: "Case Ore-einted",
       description: "Minare 24’ the annual Geo-mining fest at NIT Rourkela hosts the annual Case Ore-iented competition. Participants tackle real-world mining challenges, covering exploration, extraction, and processing, safety, and community engagement. This platform allows experts to demonstrate critical thinking and problem-solving skills, fostering collaboration and innovation in the mining industry. It emphasizes sustainable practices and responsible resource management, contributing to the advancement of the sector. Join us for an unforgettable event. Don't miss out!",
-      imgUrl: projImg2,
+      imgUrl: f,
       Rules:CO,
       RulesToFollow:"Rules-To-Follow",
     },
