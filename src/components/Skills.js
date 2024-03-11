@@ -41,26 +41,7 @@ export const Skills = () => {
                         <h2>Sponsors</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                        <div className="item">
-                                <img src={"https://res.cloudinary.com/daho6qhd0/image/upload/v1710151138/minare/im1_yjh1pv.png"} alt="Image" />
-                                <h5>OMC</h5>
-                            </div>
-                            <div className="item">
-                                <img src={"https://res.cloudinary.com/daho6qhd0/image/upload/v1710151428/minare/image_5_yzikr4.png"} alt="Image" />
-                                <h5>MCL</h5>
-                            </div>
-                            <div className="item">
-                                <img src={"https://res.cloudinary.com/daho6qhd0/image/upload/v1710151255/minare/R_zsvmzk.png"} alt="Image" />
-                                <h5>RC RUNGTA GROUP</h5>
-                            </div>
-                            <div className="item">
-                                <img src={"https://res.cloudinary.com/daho6qhd0/image/upload/v1710151240/minare/JSW_uavz85.png"} alt="Image" />
-                                <h5>JSW</h5>
-                            </div>
-                            <div className="item">
-                                <img src={"https://res.cloudinary.com/daho6qhd0/image/upload/v1710151213/minare/image_3_ivc8wj.png"} alt="Image" />
-                                <h5>OCPL</h5>
-                            </div>
+
                   
                                 </Carousel>
                     </div>
