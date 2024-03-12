@@ -56,6 +56,10 @@ export const NavBar = () => {
     navigate("/register");
   };
 
+  const handleSponsor = () => {
+    navigate("/sponsors");
+  };
+
   return (
     
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
@@ -84,11 +88,11 @@ export const NavBar = () => {
               Home
             </Nav.Link>
             <Nav.Link
-              href="#skills"
+              href="/sponsors"
               className={
                 activeLink === "skills" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("skills")}
+              onClick={handleSponsor}
             >
               Sponsors
             </Nav.Link>
