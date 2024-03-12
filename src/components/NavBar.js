@@ -36,21 +36,21 @@ export const NavBar = () => {
     setActiveLink(value);
   };
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const accomodationData = [];
-     await getAccomodationData((data)=>{
-      accomodationData.push(Object.values(data));
-      // console.log(accomodationData);
-     });
-      const normalData = [];
-      await getNormalData((data)=>{
-        normalData.push(Object.values(data));
-        // console.log(normalData);
-      });
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const accomodationData = [];
+  //    await getAccomodationData((data)=>{
+  //     accomodationData.push(Object.values(data));
+  //     // console.log(accomodationData);
+  //    });
+  //     const normalData = [];
+  //     await getNormalData((data)=>{
+  //       normalData.push(Object.values(data));
+  //       // console.log(normalData);
+  //     });
+  //   };
+  //   fetchData();
+  // }, []);
 
   const handleNavigate = () => {
     navigate("/register");

@@ -15,8 +15,8 @@ export const Projects = () => {
 
   const projects = [
     {title: "MineForge",
-      description: "Are you ready to step into the shoes of a future mine manager and confront the complexities of the mining industry? Join us at MINARE'24 for an immersive simulation challenge. Mine Manager Simulation Challenge offers aspiring mine managers an immersive opportunity to navigate the complexities of the mining industry through simulated scenarios. Participants will engage in realistic exercises including mining planning and development simulations, production optimization challenges, DGMS inspection drills, and accidental scenario exercises, honing their decision-making, problem-solving, and crisis management skills. This event provides hands-on learning, industry insights,and networking opportunities, empowering future mine managers to prepare for leadership roles in the evolving mining sector.",
-      imgUrl: "https://res.cloudinary.com/daho6qhd0/image/upload/v1710150925/minare/a_jgc1tb.png",
+      description:"MINARE'24 presents an immersive Mine Manager Simulation Challenge, allowing participants to navigate mining complexities. Engage in realistic exercises like planning, production optimization, inspections, and crisis management. Enhance decision-making and problem-solving skills while gaining industry insights and networking opportunities. Prepare for leadership roles in the mining sector.",
+       imgUrl: "https://res.cloudinary.com/daho6qhd0/image/upload/v1710150925/minare/a_jgc1tb.png",
       Rules:Mf,
       RulesToFollow:"Rules-To-Follow",
     },
@@ -67,12 +67,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Events</h2>
-                <p>Any event will be cancelled if we will be having less than 6 particiapants in group or individuals as mentioned in the particular event</p>                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Geomining Ventures</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
+                                <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
