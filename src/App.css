@@ -435,6 +435,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: scroll;
   margin-bottom: 24px;
+  display:flex;
+  justify-content: space-evenly;
 }
 .proj-imgbx::before {
   content: "";
@@ -577,6 +579,22 @@ div#slideInUp.animate_animated.animate_slideInUp.tab-content
 .contact form button:hover::before {
   width: 100%;
 }
+.Home{
+  border:2px solid white;
+  text-align:center;
+  display:flex;
+  justify-content:center;
+
+
+}
+.div1{
+  display:flex;
+ justify-content: space-evenly;
+ gap: 130px;
+ width:700px;
+ margin-left: 20px;
+}
+
 
 /************ Footer Css ************/
 .footer {

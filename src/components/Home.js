@@ -12,8 +12,6 @@ const Item = styled(Paper)(({ theme }) => ({
   color: 'white',
   text:'white',
   textAlign: 'center',
-  paddingLeft: 'auto',
-  paddingRight: 'auto'
 }));
 
 const  Home =() => {
@@ -38,11 +36,28 @@ etc.
           </Item>
         </Grid>
         
-        <Grid item xs={6} md={4}>
-          <Item>xs=6 md=4</Item>
+        <Grid item xs={6}>
+          <Item>
+            <h1>About Department</h1>
+            <p style={{width:"600px", marginLeft:"auto", marginRight:"auto",paddingTop:'10px',lineHeight:'25px'}} >The Department of Mining Engineering at NIT Rourkela was established in 1979 in the midst of coal and mineral belt
+with a vision to become a global leader of higher learning in the field of eco-friendly exploitation and utilization of
+mineral resources for the welfare of the society and to be a preferred destination for undergraduate and graduate
+studies. The Department specializes in Mining Technology, Geomechanics and Strata Control, Mine Environment
+and Safety Engineering, Clean Coal Technology, Application of GIS and Remote Sensing in Mining, Computer
+Application in Mining, Mine Planning, Mine Surveying etc. It boasts modern and sophisticated equipment for
+physical as well as the latest computing facilities with state-of-the-art mining software. The faculty members are
+part of the different Expert and Technical Committees constituted for policy formulation and technical evaluation for
+mining industry. The Department frequently conducts continuing education programmes for the benefit of the
+professionals from industry and other academic, research and government regulatory organisations representing
+both national and international level.All-round development of students is practiced with exposure to mines through
+study tours to nearby mines, technical talks by outside experts, industry oriented projects and a host of other
+technical activities.</p>
+          </Item>
         </Grid>
-        <Grid item xs={6} md={8}>
-          <Item>xs=6 md=8</Item>
+        <Grid item xs={6} >
+          <Item>
+            <img style = {{width:'650px'}} src='https://res.cloudinary.com/dtxoiglst/image/upload/v1710261393/minare/t1mapgsdjq2eyc4ch1fb.jpg' />
+          </Item>
         </Grid>
       </Grid>
     </Box>
