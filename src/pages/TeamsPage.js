@@ -7,6 +7,7 @@ import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { TypeH2 } from "react-bootstrap-icons";
 
 
 export default function Teams(){
@@ -15,13 +16,13 @@ export default function Teams(){
         {
             id : '1',
             name: 'Prof. K. Umamaheshwar Rao',
-            position: 'Director, Patron (Ex-officio)',
+            position: 'Director, Patron ',
             imgurl: 'https://www.nitrkl.ac.in/assets/images/director.jpg'
         },
         {
             id : '2',
             name: 'Prof. A. K. Gorai',
-            position: 'Head of the Department, President (Ex-officio) ',
+            position: 'Head of the Department, President ',
             imgurl: 'https://res.cloudinary.com/dei7rxeug/image/upload/v1710144647/minare/soaqr9egx9v53kwpl4sw.jpg'
         },
         {
@@ -36,6 +37,8 @@ export default function Teams(){
             position: 'Treasurer',
             imgurl: 'https://res.cloudinary.com/dei7rxeug/image/upload/v1710017177/minare/bqimec7k5wbwi9dtjdxd.png'
         },
+          
+
         {
             id : '5',
             name: 'Aryaman Biswal',
@@ -48,39 +51,40 @@ export default function Teams(){
             position: 'Secretary',
             imgurl: 'https://res.cloudinary.com/dei7rxeug/image/upload/v1710017063/minare/kbv2ua8bpinpj2mbeocr.jpg'
         },
+        
         {
+           
             id : '7',
-            name: 'Kanha Kalingo',
-            position: 'Joint Secretary',
-            imgurl: 'https://res.cloudinary.com/dei7rxeug/image/upload/v1710017064/minare/lvawudfyup6ktxajrmz0.jpg'
-        },
-        {
-           
-            id : '8',
-            name: 'Tavishi Agarwal',
-            position: 'Joint Secretary',
-            imgurl: 'https://res.cloudinary.com/dei7rxeug/image/upload/v1710017061/minare/dp6l5wzejgf4nvbtyfvc.jpg'
-        },
-        {
-           
-            id : '9',
             name: 'Baishakhi Biswal',
             position: 'Cultural Secretary',
             imgurl: 'https://res.cloudinary.com/dei7rxeug/image/upload/v1710017063/minare/qftfid7wozcmrrrurk5b.jpg'
         },
         {
            
-            id : '10',
+            id : '8',
             name: 'Piyush Kumar',
             position: 'Literary Secretary',
             imgurl: 'https://res.cloudinary.com/dei7rxeug/image/upload/v1710017061/minare/umeof1jka9eijnsl16x0.jpg'
         },
         {
            
-            id : '11',
+            id : '9',
             name: 'Anurag Roy',
             position: 'Games and Sports Secretary',
             imgurl: 'https://res.cloudinary.com/dei7rxeug/image/upload/v1710017062/minare/idmg45954qzm15giqs5h.jpg'
+        },
+        {
+            id : '10',
+            name: 'Kanha Kalingo',
+            position: 'Joint Secretary',
+            imgurl: 'https://res.cloudinary.com/dei7rxeug/image/upload/v1710017064/minare/lvawudfyup6ktxajrmz0.jpg'
+        },
+        {
+           
+            id : '11',
+            name: 'Tavishi Agarwal',
+            position: 'Joint Secretary',
+            imgurl: 'https://res.cloudinary.com/dei7rxeug/image/upload/v1710017061/minare/dp6l5wzejgf4nvbtyfvc.jpg'
         },
 
         
@@ -114,7 +118,7 @@ export default function Teams(){
                 }}>
                 
                 <div style={{width: '56%'}}>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Mining Engineering society
                 </div>
             </div>
 
@@ -135,5 +139,6 @@ export default function Teams(){
             
         </div>
     );
+
 
     }
