@@ -365,6 +365,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
+  margin-bottom: 15px;
 }
 .project p {
   color: #B8B8B8;
@@ -454,7 +455,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
-  overflow:scroll
+  overflow:none;
 }
 #proj-button{
   margin-top: 10px;
@@ -462,7 +463,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color:white;
   text-align: center;
   border-radius:55px;
-  opacity:0.5;
+  opacity:0.6;
   background-color: #891652;
   padding-left: 16px;
   padding-right: 16px;
@@ -476,16 +477,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 1;
 }
 .proj-txtx h4 {
-  font-size: 25px;
+  font-size:25px;
   font-weight: 700;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.7px;
   line-height: 1.1em;
 }
 .proj-txtx span {
   font-style: italic;
   font-weight: 400;
-  font-size: 10px;
-  letter-spacing: 0.8px;
+  font-size: 17px;
+  letter-spacing: 0.4px;
 }
 .background-image-right {
   top: 20%;
