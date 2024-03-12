@@ -1,26 +1,23 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import { Skills } from "./Skills";
 import { Phone } from "@mui/icons-material";
 
 function Sponsorship() {
   return (
-    <Box sx={{ mt: "4rem", padding: "8rem" }}>
+    <Box sx={{ mt: "6rem", padding: {xs:'2rem', lg: '6rem'} }}>
       <Box
         sx={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
+          textAlign: "center",
+          mb: "2rem",
         }}
       >
         <Typography
           variant="inherit"
-          sx={{ fontWeight: "semi-bold", fontSize: "72px" }}
+          sx={{ fontWeight: "semi-bold", fontSize: { xs: "48px", lg: "72px" } }}
         >
-          Why Sponsor Minare !
+          Why Sponsor Minare!
         </Typography>
-        <Typography variant="caption" fontFamily={"revert"} fontSize={"18px"}>
+        <Typography variant="caption" sx={{ fontSize: { xs: "14px", md: "18px" } }}>
           MINARE provides a unique platform to the young minds studying mining
           engineering and allied courses in leading technical institutes of the
           country to showcase their talent and skills. Your sponsorship of
@@ -30,65 +27,65 @@ function Sponsorship() {
           a proud sponsor, your brand will create awareness, along with
           increasing visibility and credibility. Necessary publicity material
           provided by you will be circulated among the participants and
-          participating institutse. The campus ambassadors, integral to
+          participating institutes. The campus ambassadors, integral to the
           organization of Minare, shall spread your ideas. Your contribution
-          shall also be publicized through departmental reports and website.{" "}
+          shall also be publicized through departmental reports and the website.
         </Typography>
       </Box>
       <Box sx={{ my: "2rem" }}>
         <img
-          src="https://res.cloudinary.com/dh4qhdszo/image/upload/v1710257145/minare/j1dkwo72dbz5u6t3axqn.jpg"
+          src="https://res.cloudinary.com/dh4qhdszo/image/upload/v1710264432/minare/qrynoulone2j54wa60vr.png"
           alt="WhySponsortable"
         />
       </Box>
       <Box sx={{ my: "2rem" }}>
         <img
-          src="https://res.cloudinary.com/dh4qhdszo/image/upload/v1710257121/minare/wghrjpt6kopzflre3pfs.jpg"
+          src="https://res.cloudinary.com/dh4qhdszo/image/upload/v1710264427/minare/zyo2mufuexo0khg089at.png"
           alt="Past sponsors"
         />
       </Box>
-      <Box sx={{ display: "flex", justifyContent: "space-around" }}>
-        <Box sx={{ display: "flex", flexDirection: "column" }}>
-          <h2>
+      <Box display={{ xs: 'block', lg: 'flex' }} flexDirection={{ xs: 'column', lg: 'row' }} alignItems={'center'} justifyContent={'space-around'}>
+        <Box sx={{ display:'flex', flexDirection:'column',  mr: { xs: 0, lg: "2rem" }, mb: { xs: "2rem", lg: 0 } }}>
+          <Typography variant='h3' sx={{ mb: "1rem" }}>
             <u>Bank Details</u>
-          </h2>
-          <Typography>
-            <b>A/c. Name : </b> MS MINING ENGG SOCIETY
           </Typography>
           <Typography>
-            <b>A/c. Number : </b> 10138951149
+            <b>A/c. Name:</b> MS MINING ENGG SOCIETY
           </Typography>
           <Typography>
-            <b>IFSC Code : </b> SBIN0002109
+            <b>A/c. Number:</b> 10138951149
+          </Typography>
+          <Typography>
+            <b>IFSC Code:</b> SBIN0002109
           </Typography>
         </Box>
-        <Box sx={{ display: "flex", flexDirection: "column" , justifyContent: 'center'}}>
-          <h3>
+        <Box sx={{}}>
+          <Typography variant="h4" sx={{ mb: "1rem" }}>
             <u>Contact Details</u>
-          </h3>
-          <Box sx={{display:'flex',flexDirection:'column', gap:'2rem'}}>
-            <Box sx={{ display: "flex", flexDirection: "column" }}>
+          </Typography>
+          <Box sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+            <Box>
               <Typography>
                 <b>Satyabrata Biswal</b>
               </Typography>
               <Typography>
                 <i>Secretary</i>
               </Typography>
-              <Typography>Email : minare@nitrkl.ac.in</Typography>
+              <Typography>Email: minare@nitrkl.ac.in</Typography>
               <Typography>
-                <Phone /> : +91 87632 20285
+                <Phone />: +91 87632 20285
               </Typography>
             </Box>
-            <Box sx={{ display: "flex", flexDirection: "column" }}>
+            <Box>
               <Typography>
                 <b>Prof. H.B.Sahu</b>
               </Typography>
               <Typography>
                 <i>Advisor</i>
               </Typography>
-              <Typography>Email : hbsahu@nitrkl.ac.in</Typography>
+              <Typography>Email: hbsahu@nitrkl.ac.in</Typography>
               <Typography>
-                <Phone /> : +91 94372 45625
+                <Phone />: +91 94372 45625
               </Typography>
             </Box>
           </Box>
