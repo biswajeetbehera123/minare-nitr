@@ -5,6 +5,8 @@ import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
 import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
+import { GL } from "./components/GL";
+
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import Teams from './pages/TeamsPage';
@@ -16,6 +18,7 @@ import Sponsorship from "./components/Sponsorship";
 function App() {
   return (
     <div className="App">
+      <AuthProvider>
       <BrowserRouter>
           <NavBar />
           
@@ -25,6 +28,9 @@ function App() {
                 <Banner />
                 <Skills />
                 <Projects />
+                <GL/>
+                {/* <Contact /> */}
+
               </>
             } />
             <Route path="/teams" element={<Teams /> } />
@@ -33,6 +39,7 @@ function App() {
           </Routes>
         </BrowserRouter>
         <Footer />
+      </AuthProvider>
     </div>
   );
 }

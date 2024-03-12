@@ -68,6 +68,11 @@ export const NavBar = () => {
           <img src={logo} alt="Logo" />
           <img src={white} alt="MES Logo" />
         </Navbar.Brand>
+        <div className="ms-auto d-md-none navbar-text">
+            <button className="vvd small-button" onClick={handleNavigate}>
+              <span className="text-white border-white">Let’s Register</span>
+            </button>
+          </div>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
