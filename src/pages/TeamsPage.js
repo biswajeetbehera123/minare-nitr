@@ -91,6 +91,64 @@ export default function Teams(){
         
     ]
 
+    const coreTeamData = [
+        {
+            id: '1',
+            teamName: 'Event management',
+            pr1: 'Abhijeet Kumar Nayak',
+            mob1: '+91 7657017701',
+            pr2: 'Pranay kishore Ray Choudhury ',
+            mob2: '+91 9668457855'
+        },
+        {
+            id: '2',
+            teamName: 'Technical and Database',
+            pr1: ' Rahul Manglani ',
+            mob1: '+91 7071660165',
+            pr2: 'Biswajeet Behera ',
+            mob2: '+91 7655042927'
+        },
+        {
+            id: '3',
+            teamName: 'Publicity',
+            pr1: ' Ashish Kumar Barah',
+            mob1: '+91 7848061103',
+            pr2: 'Aniket Sharma',
+            mob2: '+91 8280179870'
+        },
+        {
+            id: '4',
+            teamName: 'Accommodation and hospitality',
+            pr1: 'Amit kumar Sahu',
+            mob1: '+91 8457014106',
+            pr2: 'Smruti ranjan sethy',
+            mob2: '+91 7894487946'
+        },
+        {
+            id: '5',
+            teamName: 'Creative ',
+            pr1: 'Rahul Ranjan Dash ',
+            mob1: ' +919625158514',
+            pr2: 'Ayush aryaman puhan',
+            mob2: '+91 9109186333'
+        },
+        {
+            id: '6',
+            teamName: 'Content ',
+            pr1: 'Anish Das ',
+            mob1: '+91 7008728552',
+            pr2: 'Aniket Bansal ',
+            mob2: '+91 7978649718'
+        },
+        {
+            id: '7',
+            teamName: 'Sponsorship ',
+            pr1: ' Badrish ray',
+            mob1: '+91 8917228649'
+            
+        },
+    ]
+
     return(
         <div class="wrapper">
 
@@ -107,7 +165,7 @@ export default function Teams(){
 
             <div style={{
                 color: '#B8B8B8',
-                fontSize: '18px',
+                fontSize: '28px',
                 letterSpacing: '0.8px',
                 lineHeight: '1.5em',
                 margin: '14px auto 30px auto',
@@ -125,17 +183,63 @@ export default function Teams(){
             {
                 teamData.map((item)=>{
                     return(
-                        <div className="card" key={item.id}>
-                            <img className="card-image" src= {item.imgurl} />
+                        <>
+                            <div className="card" key={item.id}>
+                                <img className="card-image" src= {item.imgurl} />
 
-                            <div className="info">
-                                <h1 id="team-card-head">{item.name}</h1>
-                                <p>{item.position}</p>
+                                <div className="info">
+                                    <h1 id="team-card-head">{item.name}</h1>
+                                    <p>{item.position}</p>
+                                </div>
                             </div>
-                        </div>
+                        </>
                     );
                 })
             }
+
+            <div style={{
+                color: '#B8B8B8',
+                fontSize: '48px',
+                letterSpacing: '0.8px',
+                lineHeight: '1.5em',
+                margin: '14px auto 14px auto',
+                textAlign: 'center',
+                width: '100vw',
+                display: 'flex',
+                justifyContent: 'center'
+                }}>
+                
+                <div style={{width: '56%'}}>
+                    Minare
+                </div>
+            </div>
+
+            <div style={{
+                width:"100vw",
+                display: "flex",
+                flexWrap: "wrap",
+                padding: "50px",
+                justifyContent: "space-evenly"
+            }}>
+                {
+                    coreTeamData.map((item) =>(
+                        <div key={item.id} 
+                        style={{
+                        width: "30%",
+                        minWidth:'350px',
+                        margin: "10px",
+                        border: "2px solid white",  
+                        borderRadius: "20px",
+                        color:'white',
+                        padding: '5px'
+                        }}>
+                            <div style={{textAlign: 'center', fontSize: '28px', marginBottom:'10px'}}>{item.teamName}</div>
+                            <p>{item.pr1}&nbsp; &nbsp; &nbsp;{item.mob1}</p>
+                            <p>{item.pr2}&nbsp; &nbsp; &nbsp;{item.mob2}</p>
+                        </div>
+                    ))
+                }
+            </div>
             
         </div>
     );
