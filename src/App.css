@@ -184,6 +184,21 @@ span.navbar-text {
 	height: 100%;
 	position: absolute;
 }
+@media only screen and (max-width: 768px) {
+  nav.navbar a.navbar-brand {
+    width: 16%; /* Adjust the width as needed */
+  }
+}
+@media (max-width: 768px) {
+  .small-button {
+    font-size: 8px;
+    padding: 2px 5px; 
+  }
+}
+.navbar-text .small-button{
+  padding: 4px 12px;
+  font-size: 15px;
+}
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
 	outline: none;
