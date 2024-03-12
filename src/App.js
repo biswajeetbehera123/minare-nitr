@@ -13,6 +13,7 @@ import Teams from './pages/TeamsPage';
 import { AuthProvider } from "./context/authProvider";
 import RegisterForm from "./components/RegisterForm";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Sponsorship from "./components/Sponsorship";
 
 function App() {
   return (
@@ -29,10 +30,12 @@ function App() {
                 <Projects />
                 <GL/>
                 {/* <Contact /> */}
+
               </>
             } />
             <Route path="/teams" element={<Teams /> } />
             <Route path="/register" element={<RegisterForm />} />
+            <Route path="/sponsors" element={<Sponsorship/>} />
           </Routes>
         </BrowserRouter>
         <Footer />

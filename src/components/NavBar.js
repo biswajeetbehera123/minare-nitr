@@ -36,24 +36,28 @@ export const NavBar = () => {
     setActiveLink(value);
   };
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const accomodationData = [];
-     await getAccomodationData((data)=>{
-      accomodationData.push(Object.values(data));
-      // console.log(accomodationData);
-     });
-      const normalData = [];
-      await getNormalData((data)=>{
-        normalData.push(Object.values(data));
-        // console.log(normalData);
-      });
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const accomodationData = [];
+  //    await getAccomodationData((data)=>{
+  //     accomodationData.push(Object.values(data));
+  //     // console.log(accomodationData);
+  //    });
+  //     const normalData = [];
+  //     await getNormalData((data)=>{
+  //       normalData.push(Object.values(data));
+  //       // console.log(normalData);
+  //     });
+  //   };
+  //   fetchData();
+  // }, []);
 
   const handleNavigate = () => {
     navigate("/register");
+  };
+
+  const handleSponsor = () => {
+    navigate("/sponsors");
   };
 
   return (
@@ -84,11 +88,11 @@ export const NavBar = () => {
               Home
             </Nav.Link>
             <Nav.Link
-              href="#skills"
+              href="/sponsors"
               className={
                 activeLink === "skills" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("skills")}
+              onClick={handleSponsor}
             >
               Sponsors
             </Nav.Link>
