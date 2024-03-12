@@ -36,24 +36,28 @@ export const NavBar = () => {
     setActiveLink(value);
   };
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const accomodationData = [];
-     await getAccomodationData((data)=>{
-      accomodationData.push(Object.values(data));
-      // console.log(accomodationData);
-     });
-      const normalData = [];
-      await getNormalData((data)=>{
-        normalData.push(Object.values(data));
-        // console.log(normalData);
-      });
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const accomodationData = [];
+  //    await getAccomodationData((data)=>{
+  //     accomodationData.push(Object.values(data));
+  //     // console.log(accomodationData);
+  //    });
+  //     const normalData = [];
+  //     await getNormalData((data)=>{
+  //       normalData.push(Object.values(data));
+  //       // console.log(normalData);
+  //     });
+  //   };
+  //   fetchData();
+  // }, []);
 
   const handleNavigate = () => {
     navigate("/register");
+  };
+
+  const handleSponsor = () => {
+    navigate("/sponsors");
   };
 
   return (
@@ -64,13 +68,18 @@ export const NavBar = () => {
           <img src={logo} alt="Logo" />
           <img src={white} alt="MES Logo" />
         </Navbar.Brand>
+        <div className="ms-auto d-md-none navbar-text">
+            <button className="vvd small-button" onClick={handleNavigate}>
+              <span className="text-white border-white">Let’s Register</span>
+            </button>
+          </div>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link
-              href="#home"
+              href="/"
               className={
                 activeLink === "home" ? "active navbar-link" : "navbar-link"
               }
@@ -79,11 +88,11 @@ export const NavBar = () => {
               Home
             </Nav.Link>
             <Nav.Link
-              href="#"
+              href="/sponsors"
               className={
                 activeLink === "skills" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("skills")}
+              onClick={handleSponsor}
             >
               Sponsors
             </Nav.Link>
