@@ -38,11 +38,18 @@ export const GL = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                  <div class="div1">
+                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                  <Nav.Item>
+                      <Nav.Link eventKey="first">UAV Workshop</Nav.Link>
+                    </Nav.Item>
+                  </Nav>
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                   <Nav.Item>
                       <Nav.Link eventKey="first">Guest Lecture</Nav.Link>
                     </Nav.Item>
                   </Nav>
+                  </div>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>

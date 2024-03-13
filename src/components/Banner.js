@@ -55,20 +55,20 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <span className="tagline">Welcome to MINARE!</span>
-                  <h1>{`Hi! This is Minare! `} <span className="txt-rotate" dataPeriod="1000" data-rotate='toRotate'><span className="wrap">{text}</span></span></h1>
+                  <h1>{`Minare! `} <span className="txt-rotate" dataPeriod="1000" data-rotate='toRotate'><span className="wrap">{text}</span></span></h1>
                   <p>
-                    Since 1979, NIT Rourkela's Mining Engineering department has led in academic excellence and industry contributions. Their upcoming event, MINARE-2023, promises to ignite passion and skills among future mining professionals. With nationwide participation, MINARE blends educational insights and fun, offering exposure to industry expertise and fostering holistic development.</p>
+                        </p>
                   {/* <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button> */}
                 </div>}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
-              {/* {({ isVisible }) =>
+              {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img" />
-                </div>} */}
+                  <img src="https://res.cloudinary.com/dtxoiglst/image/upload/v1710263883/minare/oxuqwsgvmgxtibc3ehvr.png" alt="Header Img" />
+                </div>}
+                
             </TrackVisibility>
           </Col>
         </Row>
