@@ -1,23 +1,3 @@
-import  { default as image1 } from './1.jpeg';
-import  { default as image2 } from './2.jpeg';
-import  { default as image3 } from './3.jpeg';
-import  { default as image4 } from './4.jpeg';
-import  { default as image5 } from './5.jpeg';
-import  { default as image6 } from './6.jpg';
-import  { default as image7 } from './7.jpg';
-import  { default as image8 } from './8.jpg';
-import  { default as image9 } from './9.jpg';
-import  { default as image10 } from './10.JPG';
-import  { default as image11 } from './11.JPG';
-import  { default as image12 } from './12.JPG';
-import  { default as image13 } from './13.JPG';
-import  { default as image14 } from './14.JPG';
-import  { default as image15 } from './15.JPG';
-import  { default as image16 } from './16.JPG';
-import  { default as image17 } from './17.JPG';
-import  { default as image18 } from './18.jpeg';
-import  { default as image19 } from './19.JPG';
-import  { default as image20 } from './20.JPG';
 const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
 
 export const photos = [
@@ -40,6 +20,22 @@ export const photos = [
         { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710314836/Gallery/en11ivghyoi1ppxtxs5h.jpg",width: 1350, height: 950 },
         { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710316869/Gallery/z2gpznoeh2zhxfreci09.jpg",width: 1350, height: 950 },
         { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710316847/Gallery/xy9goloxjmycflq7pf1e.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710326703/Gallery%202/pkmo55tcqebdk3flft0g.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710326703/Gallery%202/oqbykcyuj1opl48fcnni.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710326623/Gallery%202/xm2ypyhd2r4ffo4urctz.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710326610/Gallery%202/auh6cts3s51v9ln1pdk5.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710326609/Gallery%202/t6w2p0oazjxzkjujcuxd.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710326546/Gallery%202/puixo75grit9cvzvqura.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710326545/Gallery%202/g3jqsc8usz6t1srer2yg.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710326545/Gallery%202/hu4ydeqxkenclfpjleom.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710326545/Gallery%202/tihah2uav4kzsh8snnpi.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710326545/Gallery%202/pegnaqiogvuz3mhjkmql.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710326544/Gallery%202/kzktj2wcgpogypw8cv4h.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710326544/Gallery%202/h0pbzrc3yoqisg1s9r8o.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710326544/Gallery%202/zgptwtwdrf9uf8kijvyq.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710326544/Gallery%202/uyxo4f2e3g0dfyq6arbr.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710326544/Gallery%202/s8bznwhyu2guo4f24cva.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710326544/Gallery%202/rkpo9rxxzdgxymvrmgs4.jpg",width: 1350, height: 950 },
         
     ];
 
