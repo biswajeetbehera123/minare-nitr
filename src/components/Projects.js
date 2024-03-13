@@ -10,7 +10,6 @@ import Mbc from "../assets/img/MB.pdf";
 import Mf from "../assets/img/MF.pdf";
 import Mm from "../assets/img/MM.pdf";
 
-
 export const Projects = () => {
 
   const projects = [
@@ -33,7 +32,9 @@ export const Projects = () => {
       description: "Experience the excitement of Minare 2024, organized by NIT Rourkela, where innovation meets opportunity. Showcase your groundbreaking research in our technical paper presentation, network with industry leaders, and contribute to the forefront of technological advancement. Elevate your academic and professional profile while engaging in a dynamic exchange of ideas. Don't miss out on this chance to be part of an extraordinary event shaping the future of technology",
       imgUrl:"https://res.cloudinary.com/daho6qhd0/image/upload/v1710150977/minare/e_k5smpe.png" ,
       Rules:ROP,
-      RulesToFollow:"Rules-To-Follow",
+      RulesToFollow:"Rules-to-follow",
+
+      
     },
     {title: "MineForge",
       description:"MINARE'24 presents an immersive Mine Manager Simulation Challenge, allowing participants to navigate mining complexities. Engage in realistic exercises like planning, production optimization, inspections, and crisis management. Enhance decision-making and problem-solving skills while gaining industry insights and networking opportunities. Prepare for leadership roles in the mining sector.",
@@ -48,7 +49,7 @@ export const Projects = () => {
       description: "Dive into Mine Matrix: The Treasure Hunt for an adrenaline-fueled challenge! With puzzles, codes, and treasures awaiting, gather your team and plunge into the depths of the mining world. Unravel mysteries, conquer obstacles, and race against time. Join us for an epic journey of discovery, teamwork, and victory.",
       imgUrl: "https://res.cloudinary.com/daho6qhd0/image/upload/v1710150962/minare/d_dayinh.png",
       Rules:Mm,
-      RulesToFollow:"Rules-To-Follow",
+      RulesToFollow:"Paper-presentation-topics",
     },
    
     {
