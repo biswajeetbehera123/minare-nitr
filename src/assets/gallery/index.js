@@ -17,31 +17,30 @@ import  { default as image16 } from './16.JPG';
 import  { default as image17 } from './17.JPG';
 import  { default as image18 } from './18.jpeg';
 import  { default as image19 } from './19.JPG';
-import  { default as image21 } from './20.JPG';
+import  { default as image20 } from './20.JPG';
 const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
 
 export const photos = [
-        { src: image1, width: 1080, height: 1440 },
-        { src: image2,width: 1080, height: 1620 },
-        { src: image9,width: 1080, height: 681 },
-        { src: image3,width: 1080, height: 1350 },
-        { src: image4,width: 1080, height: 1350 },
-        { src: image5,width: 1080, height: 1350 },
-        { src: image6,width: 1080, height: 1350 },
-        { src: image7,width: 1080, height: 1350 },
-        { src: image10,width: 1080, height: 681 },
-        { src: image11,width: 1080, height: 1350 },
-        { src: image12,width: 1080, height: 1350 },
-        { src: image8,width: 1080, height: 681 },
-        { src: image13,width: 1080, height: 1350 },
-        { src: image14,width: 1080, height: 1350 },
-        { src: image15,width: 1080, height: 1350 },
-        { src: image16,width: 1080, height: 1350 },
-        { src: image17,width: 1080, height: 1350 },
-        { src: image18,width: 1080, height: 1350 },
-        { src: image19,width: 1080, height: 1350 },
-        { src: image21,width: 1080, height: 1350 },
-
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710316876/Gallery/ay6ncxfsd1nzogxk6etc.jpg", width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710314836/Gallery/yvfewuredr7xgx6y7i5i.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710316856/Gallery/ye6hynoiwvsdrqsgwetz.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710316856/Gallery/ime4i6gxpeuk4lnj9kub.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710316855/Gallery/krmweaqwjdkbveonywzi.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710316855/Gallery/xg0yfivaofexuwniwjef.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710316849/Gallery/gvcksmlmrdhkmox2f1pf.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710316847/Gallery/cuatl9psff0lcn9qwgrd.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710314894/Gallery/gzzti5bclucqipkf6iat.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710314874/Gallery/clyrnrt7fzwchldeddve.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710314840/Gallery/rzktpf4edmascblcrfhw.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710314838/Gallery/rzgxvzww7bejisr4nvk0.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710314838/Gallery/xchrfhuufrv7ncqlb58v.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710314838/Gallery/vgrszdjgv87djr7ykxux.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710314837/Gallery/euagyifcmdeb9dvze2ph.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710314837/Gallery/k6v3df1i0m0saz28j9zm.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710314836/Gallery/en11ivghyoi1ppxtxs5h.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710316869/Gallery/z2gpznoeh2zhxfreci09.jpg",width: 1350, height: 950 },
+        { src: "https://res.cloudinary.com/desyzom9w/image/upload/v1710316847/Gallery/xy9goloxjmycflq7pf1e.jpg",width: 1350, height: 950 },
+        
     ];
 
 
