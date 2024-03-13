@@ -16,14 +16,14 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const Home = () => {
   return (
-    <section id="about">
+    <section style={{margin:'20px'}} id="about">
 
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>
           <Grid item xs={12} >
             <Item>
-              <h1>About Minare</h1>
-              <Typography>
+              <h1 style={{fontWeight:'bold',margin:'22px'}}>About Minare</h1>
+              <Typography style={{ textAlign:'justify',width: "75%", marginLeft: "auto", marginRight: "auto",fontFamily:'serif' }}>
                 The Mining Engineering Society (MES), an association of students, faculty and alumni of the Department was
                 established in 1984 by the 1st batch alumni of the Department, with a mission is to promote mining engineering
                 education as well as to function as a link between students and industry by offering platforms for students to learn
@@ -40,8 +40,8 @@ const Home = () => {
 
           <Grid item xs={12} sm={6}>
             <Item>
-              <h1>About Department</h1>
-              <Typography>The Department of Mining Engineering at NIT Rourkela was established in 1979 in the midst of coal and mineral belt
+              <h1 style={{fontWeight:'bold'}}>About Department</h1>
+              <Typography style={{ textAlign:'justify',width:'90%',marginLeft:'auto',marginRight:'auto',fontFamily:'serif'}}>The Department of Mining Engineering at NIT Rourkela was established in 1979 in the midst of coal and mineral belt
                 with a vision to become a global leader of higher learning in the field of eco-friendly exploitation and utilization of
                 mineral resources for the welfare of the society and to be a preferred destination for undergraduate and graduate
                 studies. The Department specializes in Mining Technology, Geomechanics and Strata Control, Mine Environment
@@ -56,9 +56,9 @@ const Home = () => {
                 technical activities.</Typography>
             </Item>
           </Grid>
-          <Grid item xs={12} sm={6}>
-            <Item>
-              <img style={{ width: '100%' }} src='https://res.cloudinary.com/dtxoiglst/image/upload/v1710261393/minare/t1mapgsdjq2eyc4ch1fb.jpg' alt="Department of Mining Engineering" />
+          <Grid style={{alignItems:'center'}} item xs={12} sm={6}>
+            <Item style={{paddingTop:'40px',height:'90%'}}>
+              <img style={{height:'90%'}} src='https://res.cloudinary.com/dtxoiglst/image/upload/v1710261393/minare/t1mapgsdjq2eyc4ch1fb.jpg' alt="Department of Mining Engineering" />
             </Item>
           </Grid>
         </Grid>
