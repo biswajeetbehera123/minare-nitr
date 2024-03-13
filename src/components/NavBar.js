@@ -92,7 +92,7 @@ export const NavBar = () => {
               Gallery
             </Nav.Link>
             <Nav.Link
-              href="#skills"
+              href="/sponsors"
               className={
                 activeLink === "skills" ? "active navbar-link" : "navbar-link"
               }
