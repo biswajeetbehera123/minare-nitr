@@ -3,15 +3,17 @@ import { loadScript } from "../../utils";
 import { Button, Checkbox, Typography, TextField } from "@mui/material";
 import { Box } from "@mui/material";
 import { NavigateNext, NextPlanOutlined } from "@mui/icons-material";
-import { UserContext } from './UserContext'
+import { UserContext } from "./UserContext";
 
-import {accomodationRegistration , normalRegistration} from '../../firebase/db'
+import {
+  accomodationRegistration,
+  normalRegistration,
+} from "../../firebase/db";
 import { AuthContext } from "../../context/authProvider";
 import { useNavigate } from "react-router-dom";
 
-import Snackbar from '@mui/material/Snackbar';
-import Alert from '@mui/material/Alert';
-
+import Snackbar from "@mui/material/Snackbar";
+import Alert from "@mui/material/Alert";
 
 const Rzrpay = () => {
   const [orderCreationId, setOrderCreationId] = useState("");
@@ -21,12 +23,11 @@ const Rzrpay = () => {
   const [open, setOpen] = React.useState(false);
 
   const userData = useContext(UserContext);
-  const {user}= useContext(AuthContext)
+  const { user } = useContext(AuthContext);
 
   const navigate = useNavigate();
 
   const handleSubmit = async () => {
-
     if (!transactionId) {
       window.alert("Please enter the transaction ID");
       return;
@@ -34,26 +35,25 @@ const Rzrpay = () => {
 
     userData[0].user.transactionId = transactionId;
 
-    console.log(userData[0].user)
-    
-    if(accommodation){
-      await accomodationRegistration(userData[0].user)
-    }
-    else{
-      await normalRegistration(userData[0].user)
+    console.log(userData[0].user);
+
+    if (accommodation) {
+      await accomodationRegistration(userData[0].user);
+    } else {
+      await normalRegistration(userData[0].user);
     }
     setOpen(true);
-    navigate('/') ;
+    setTimeout(() => {
+      navigate("/");
+    }, 2000);
   };
 
   const handleAccommodationChange = (event) => {
     setAccommodation(event.target.value === "yes");
-
   };
 
-  
   const handleClose = (event, reason) => {
-    if (reason === 'clickaway') {
+    if (reason === "clickaway") {
       return;
     }
     setOpen(false);
@@ -88,45 +88,68 @@ const Rzrpay = () => {
       </Typography>
       <br />
       <Box>
-       <Typography style={{ color: "black" }}>
-       • Pay the respective registration fees to complete the registration process.
-      </Typography>
-      <Typography style={{ color: "black" }}>
-      • The payment should be done to the Bank account with the details mentioned below.
-      </Typography>
-      <Typography style={{ color: "black" }}>
-      • After the payment, enter the transaction ID and click on <i><b>SUBMIT</b></i> to complete the registration process.
-      </Typography>
+        <Typography style={{ color: "black" }}>
+          • Pay the respective registration fees to complete the registration
+          process.
+        </Typography>
+        <Typography style={{ color: "black" }}>
+          • The payment should be done to the Bank account with the details
+          mentioned below.
+        </Typography>
+        <Typography style={{ color: "black" }}>
+          • After the payment, enter the transaction ID and click on{" "}
+          <i>
+            <b>SUBMIT</b>
+          </i>{" "}
+          to complete the registration process.
+        </Typography>
       </Box>
-    <Box sx={{display:'flex', flexDirection: 'column', justifyContent:'center' , margin: '2rem'}}>
-      <Typography style={{ color: "black" }}>
-       <u> <b>Bank Account Details:</b></u>
-      </Typography>
-      <Typography style={{ color: "black" }}>
-        <b>Account Number:</b> 10138951149
-      </Typography>
-      <Typography style={{ color: "black" }}>
-        <b>IFSC Code:</b> SBIN0002109
-      </Typography>
-      <Typography style={{ color: "black" }}>
-        <b>Account Name:</b>  MS MINING ENGG SOCIETY
-      </Typography>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          margin: "2rem",
+        }}
+      >
+        <Typography style={{ color: "black" }}>
+          <u>
+            {" "}
+            <b>Bank Account Details:</b>
+          </u>
+        </Typography>
+        <Typography style={{ color: "black" }}>
+          <b>Account Number:</b> 10138951149
+        </Typography>
+        <Typography style={{ color: "black" }}>
+          <b>IFSC Code:</b> SBIN0002109
+        </Typography>
+        <Typography style={{ color: "black" }}>
+          <b>Account Name:</b> MS MINING ENGG SOCIETY
+        </Typography>
       </Box>
-      <Box sx={{margin:'4px', display: 'flex', alignItems: 'center'}}>
-      <TextField id="outlined-basic" label="Transaction ID" value={transactionId} variant="outlined" sx={{margin: '4px'}} onChange={(e) => setTransactionId(e.target.value)} />
+      <Box sx={{ margin: "4px", display: "flex", alignItems: "center" }}>
+        <TextField
+          id="outlined-basic"
+          label="Transaction ID"
+          value={transactionId}
+          variant="outlined"
+          sx={{ margin: "4px" }}
+          onChange={(e) => setTransactionId(e.target.value)}
+        />
         <Button variant="contained" onClick={handleSubmit}>
           <NavigateNext />
-         SUBMIT
+          SUBMIT
         </Button>
       </Box>
-      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+      <Snackbar open={open} autoHideDuration={5000} onClose={handleClose}>
         <Alert
           onClose={handleClose}
           severity="success"
           variant="filled"
-          sx={{ width: '100%' }}
+          sx={{ width: "100%" }}
         >
-          This is a success Alert inside a Snackbar!
+          Congratulations, you have successfully registered for MINARE 2024!
         </Alert>
       </Snackbar>
     </div>
