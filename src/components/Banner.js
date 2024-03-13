@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,7 +10,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["The Annual Geo-Mining Fest of NIT Rourkela"];
+  const toRotate = ["Annual Geo-Mining Fest of NIT Rourkela"];
   const period = 2000;
 
   useEffect(() => {
@@ -51,13 +50,16 @@ export const Banner = () => {
     <section className="banner" id="home">
       <Container>
         <Row className="aligh-items-center">
-          <Col xs={12} md={5} xl={7}>
+          <Col style={{display:'flex', alignItems: 'center' }} xs={12} md={5} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <h1>{`Minare! `} <span className="txt-rotate" dataPeriod="1000" data-rotate='toRotate'><span className="wrap">{text}</span></span></h1>
-                  <p>
-                        </p>
+                <div  className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <h1 style={{ whiteSpace: 'pre-line' }}>
+                    Minare'24 <br />
+                    <span className="txt-rotate" dataPeriod="1000" data-rotate='toRotate'>
+                      <span className="wrap">{text}</span>
+                    </span>
+                  </h1>
                   {/* <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button> */}
                 </div>}
             </TrackVisibility>
@@ -68,7 +70,6 @@ export const Banner = () => {
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
                   <img src="https://res.cloudinary.com/dtxoiglst/image/upload/v1710263883/minare/oxuqwsgvmgxtibc3ehvr.png" alt="Header Img" />
                 </div>}
-                
             </TrackVisibility>
           </Col>
         </Row>
