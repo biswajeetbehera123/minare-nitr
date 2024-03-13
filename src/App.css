@@ -265,7 +265,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-block;
 }
 .banner h1 {
-  font-size: 65px;
+  font-size: 95px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -300,6 +300,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner img {
   animation: updown 3s linear infinite;
 }
+.Home{display : inline-flex;
+  height:500px;
+  width:500px;}
 @keyframes updown {
     0% {
         transform: translateY(-20px);
@@ -433,6 +436,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: scroll;
   margin-bottom: 24px;
+  display:flex;
+  justify-content: space-evenly;
 }
 .proj-imgbx::before {
   content: "";
@@ -575,6 +580,22 @@ div#slideInUp.animate_animated.animate_slideInUp.tab-content
 .contact form button:hover::before {
   width: 100%;
 }
+.Home{
+  border:2px solid white;
+  text-align:center;
+  display:flex;
+  justify-content:center;
+
+
+}
+.div1{
+  display:flex;
+ justify-content: space-evenly;
+ gap: 130px;
+ width:700px;
+ margin-left: 20px;
+}
+
 
 /************ Footer Css ************/
 .footer {

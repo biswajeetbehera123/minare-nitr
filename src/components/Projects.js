@@ -3,10 +3,10 @@ import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import ROP from "../assets/img/Rock on pap.pdf";
-import OAQ from "../assets/img/Ore-acle Quest.pdf";
-import CO from "../assets/img/Case Ore rules.pdf";
-import Mbc from "../assets/img/MBC.pdf";
+import ROP from "../assets/img/ROP.pdf";
+import OAQ from "../assets/img/OQ.pdf";
+import CO from "../assets/img/co.pdf";
+import Mbc from "../assets/img/MB.pdf";
 import Mf from "../assets/img/MF.pdf";
 import Mm from "../assets/img/MM.pdf";
 

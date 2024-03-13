@@ -36,21 +36,6 @@ export const NavBar = () => {
     setActiveLink(value);
   };
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const accomodationData = [];
-  //    await getAccomodationData((data)=>{
-  //     accomodationData.push(Object.values(data));
-  //     // console.log(accomodationData);
-  //    });
-  //     const normalData = [];
-  //     await getNormalData((data)=>{
-  //       normalData.push(Object.values(data));
-  //       // console.log(normalData);
-  //     });
-  //   };
-  //   fetchData();
-  // }, []);
 
   const handleNavigate = () => {
     navigate("/register");
@@ -88,15 +73,7 @@ export const NavBar = () => {
               Home
             </Nav.Link>
             <Nav.Link
-              href="/sponsors"
-              className={
-                activeLink === "skills" ? "active navbar-link" : "navbar-link"
-              }
-              onClick={handleSponsor}
-            >
-              Sponsors
-            </Nav.Link>
-            <Nav.Link
+
               href="#project"
               className={
                 activeLink === "projects" ? "active navbar-link" : "navbar-link"
@@ -104,6 +81,24 @@ export const NavBar = () => {
               onClick={() => onUpdateActiveLink("projects")}
             >
               Events
+            </Nav.Link>
+            <Nav.Link
+              href="#"
+              className={
+                activeLink === "skills" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("")}
+            >
+              Gallery
+            </Nav.Link>
+            <Nav.Link
+              href="#skills"
+              className={
+                activeLink === "skills" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("skills")}
+            >
+              Sponsorship
             </Nav.Link>
             <Nav.Link
              href="/teams" 
