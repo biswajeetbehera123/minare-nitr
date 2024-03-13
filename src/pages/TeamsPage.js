@@ -103,10 +103,10 @@ export default function Teams(){
         {
             id: '2',
             teamName: 'Technical and Database',
-            pr1: ' Rahul Manglani ',
-            mob1: '+91 7071660165',
-            pr2: 'Biswajeet Behera ',
-            mob2: '+91 7655042927'
+            pr1: 'Biswajeet Behera ',
+            mob1: '+91 7655042927',
+            pr2: ' Rahul Manglani ',
+            mob2: '+91 7071660165'
         },
         {
             id: '3',

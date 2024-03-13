@@ -14,6 +14,7 @@ import { AuthProvider } from "./context/authProvider";
 import RegisterForm from "./components/RegisterForm";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sponsorship from "./components/Sponsorship";
+import { Gallery } from "./pages/Gallery";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             <Route path="/teams" element={<Teams /> } />
             <Route path="/register" element={<RegisterForm />} />
             <Route path="/sponsors" element={<Sponsorship/>} />
+            <Route path="/gallery" element={<Gallery/>} />
           </Routes>
         </BrowserRouter>
         <Footer />

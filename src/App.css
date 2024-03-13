@@ -755,8 +755,18 @@ div#slideInUp.animate_animated.animate_slideInUp.tab-content
     
   }
   
+.project{
+  overflow: hidden;
+}
   
+#event-img{
+  overflow: hidden;
+}
   
-  
-  
-  
+.proj-imgbx{
+  overflow: hidden;
+}
+
+#gallery{
+  margin-top: 12vh;
+}
