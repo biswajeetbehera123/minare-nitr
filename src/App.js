@@ -2,8 +2,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { NavBar } from "./components/NavBar";
+import Home  from "./components/Home";
 import { Banner } from "./components/Banner";
-import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { GL } from "./components/GL";
 
@@ -14,6 +14,7 @@ import { AuthProvider } from "./context/authProvider";
 import RegisterForm from "./components/RegisterForm";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sponsorship from "./components/Sponsorship";
+import { Gallery } from "./pages/Gallery";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
             <Route path='/' element={
               <>
                 <Banner />
-                <Skills />
+                <Home />
                 <Projects />
                 <GL/>
                 {/* <Contact /> */}
@@ -36,6 +37,7 @@ function App() {
             <Route path="/teams" element={<Teams /> } />
             <Route path="/register" element={<RegisterForm />} />
             <Route path="/sponsors" element={<Sponsorship/>} />
+            <Route path="/gallery" element={<Gallery/>} />
           </Routes>
         </BrowserRouter>
         <Footer />
