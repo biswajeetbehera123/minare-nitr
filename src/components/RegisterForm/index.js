@@ -182,7 +182,7 @@ const RegisterForm = () => {
       {!completed && (
         <Box
           sx={{
-            marginTop: '125px',
+            marginTop: '210px',
             border: '2px solid black',
             display: 'flex',
             justifyContent: 'center',
