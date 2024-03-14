@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/img/Minare-logo-white.svg";
 import MES from "../assets/img/MES-logo.svg";
@@ -8,13 +8,15 @@ import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 
 import { Router, useNavigate } from "react-router-dom";
-import {getAccomodationData, getNormalData} from '../firebase/db'
+import { getAccomodationData, getNormalData } from '../firebase/db'
 
 
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  const navbarRef = React.useRef(null);
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
   const navigate = useNavigate();
 
@@ -46,22 +48,37 @@ export const NavBar = () => {
   };
 
   return (
-    
-    <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+
+    <Navbar ref={navbarRef} expand="md" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="/">
           <img src={logo} alt="Logo" />
           <img src={white} alt="MES Logo" />
         </Navbar.Brand>
         <div className="ms-auto d-md-none navbar-text">
-            <button className="vvd small-button" onClick={handleNavigate}>
-              <span className="text-white border-white">Let’s Register</span>
-            </button>
-          </div>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <button className="vvd small-button" onClick={handleNavigate}>
+            <span className="text-white border-white">Let’s Register</span>
+          </button>
+        </div>
+        <Navbar.Toggle aria-controls="basic-navbar-nav"
+          onClick={() => {
+            setNavbarOpen(!navbarOpen);
+            if (!navbarOpen) {
+              document.body.style.paddingTop = `0px`;
+            } else {
+              document.body.style.paddingTop = '0px';
+            }
+          }}>
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav"
+          in={navbarOpen}
+          onEnter={() => {
+            document.body.style.paddingTop = `${navbarRef.current.clientHeight}px`;
+          }}
+          onExit={() => {
+            document.body.style.paddingTop = '0px';
+          }}>
           <Nav className="ms-auto">
             <Nav.Link
               href="/"
@@ -111,10 +128,10 @@ export const NavBar = () => {
               Sponsorship
             </Nav.Link>
             <Nav.Link
-             href="/teams" 
-             className={
-              activeLink === '/teams' ? 'active navbar-link' : 'navbar-link'
-              } 
+              href="/teams"
+              className={
+                activeLink === '/teams' ? 'active navbar-link' : 'navbar-link'
+              }
               onClick={() => onUpdateActiveLink('teams')}
             >
               Team
@@ -143,7 +160,7 @@ export const NavBar = () => {
           </span>
         </Navbar.Collapse>
       </Container>
-    </Navbar>
-    
+    </Navbar >
+
   );
 };
