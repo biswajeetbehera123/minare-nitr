@@ -37,7 +37,7 @@ export default function Teams() {
       name: "Prof. C. K. Ala",
       position: "Treasurer",
       imgurl:
-        "https://res.cloudinary.com/dei7rxeug/image/upload/v1710017177/minare/bqimec7k5wbwi9dtjdxd.png",
+        "https://res.cloudinary.com/dh4qhdszo/image/upload/v1710664234/minare/tewkzxpded7rjr113q5p.jpg",
     },
 
     {
@@ -98,7 +98,7 @@ export default function Teams() {
       teamName: "Event management",
       pr1: "Abhijeet Kumar Nayak",
       mob1: "+91 7657017701",
-      pr2: "Pranay kishore Ray Choudhury ",
+      pr2: "Pranay Kishore Ray Choudhury ",
       mob2: "+91 9668457855",
     },
     {
@@ -120,9 +120,9 @@ export default function Teams() {
     {
       id: "4",
       teamName: "Accommodation and hospitality",
-      pr1: "Amit kumar Sahu",
+      pr1: "Amit Kumar Sahu",
       mob1: "+91 8457014106",
-      pr2: "Smruti ranjan sethy",
+      pr2: "Smruti Ranjan Sethy",
       mob2: "+91 7894487946",
     },
     {
@@ -130,7 +130,7 @@ export default function Teams() {
       teamName: "Creative ",
       pr1: "Rahul Ranjan Dash ",
       mob1: " +919625158514",
-      pr2: "Ayush aryaman puhan",
+      pr2: "Ayush Aryaman Puhan",
       mob2: "+91 9109186333",
     },
     {
@@ -144,7 +144,7 @@ export default function Teams() {
     {
       id: "7",
       teamName: "Sponsorship ",
-      pr1: " Badrish ray",
+      pr1: " Badrish Ray",
       mob1: "+91 8917228649",
     },
   ];
@@ -163,7 +163,6 @@ export default function Teams() {
       >
         Team
       </div>
-
       <div
         style={{
           color: "#B8B8B8",
