@@ -8,6 +8,7 @@ import { UserContext } from "./UserContext";
 import {
   accomodationRegistration,
   normalRegistration,
+  Resgistration,
 } from "../../firebase/db";
 import { AuthContext } from "../../context/authProvider";
 import { useNavigate } from "react-router-dom";
@@ -35,13 +36,9 @@ const Rzrpay = () => {
 
     userData[0].user.transactionId = transactionId;
 
-    console.log(userData[0].user);
+    // console.log(userData[0].user);
 
-    if (accommodation) {
-      await accomodationRegistration(userData[0].user);
-    } else {
-      await normalRegistration(userData[0].user);
-    }
+    await Resgistration(userData[0].user);
     setOpen(true);
     setTimeout(() => {
       navigate("/");
@@ -61,7 +58,7 @@ const Rzrpay = () => {
 
   return (
     <div style={{ margin: "4px" }}>
-      <Typography style={{ color: "black" }}>
+      {/* <Typography style={{ color: "black" }}>
         <label>
           <input
             type="radio"
@@ -86,11 +83,14 @@ const Rzrpay = () => {
           No Mess Facility (₹600)
         </label>
       </Typography>
-      <br />
+      <br /> */}
       <Box>
         <Typography style={{ color: "black" }}>
-          • Pay the respective registration fees to complete the registration
-          process.
+          • Pay the registration fees of ₹400 /- to complete the registration
+          process.<i>No extra charges will be levied for any events.</i>
+        </Typography>
+        <Typography style={{ color: "black" }}>
+          • Fooding facilities will be not provided by us, but the information about various choices for food shops will be provided to you.
         </Typography>
         <Typography style={{ color: "black" }}>
           • The payment should be done to the Bank account with the details

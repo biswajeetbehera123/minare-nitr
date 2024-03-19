@@ -3,23 +3,32 @@ import { firebaseApp } from "../firebase/config";
 
 export const db = getDatabase(firebaseApp);
 
-export const accomodationRegistration = async (data) => {
-  try {
-    const userDataRef = ref(db, "AccomodationRegistration");
-    await push(userDataRef, data).then((snapshot) => {});
-  } catch (error) {
-    console.error("Error registering accomodation:", error);
-  }
-};
+// export const accomodationRegistration = async (data) => {
+//   try {
+//     const userDataRef = ref(db, "AccomodationRegistration");
+//     await push(userDataRef, data).then((snapshot) => {});
+//   } catch (error) {
+//     console.error("Error registering accomodation:", error);
+//   }
+// };
 
-export const normalRegistration = async (data) => {
+// export const normalRegistration = async (data) => {
+//   try {
+//     const userDataRef = ref(db, "NormalRegistration");
+//     await push(userDataRef, data).then((snapshot) => {});
+//   } catch (error) {
+//     console.error("Error registering normal:", error);
+//   }
+// };
+
+export const Resgistration = async(data)=>{
   try {
-    const userDataRef = ref(db, "NormalRegistration");
+    const userDataRef = ref(db, "Registration");
     await push(userDataRef, data).then((snapshot) => {});
   } catch (error) {
     console.error("Error registering normal:", error);
   }
-};
+}
 
 export const getAccomodationData = async (callback) => {
   const userDataRef = ref(db, "AccomodationRegistration");
