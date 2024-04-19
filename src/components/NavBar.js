@@ -9,6 +9,7 @@ import navIcon3 from "../assets/img/nav-icon3.svg";
 
 import { Router, useNavigate } from "react-router-dom";
 import { getAccomodationData, getNormalData } from '../firebase/db'
+import { NavLink } from "react-router-dom";
 
 
 
@@ -55,11 +56,11 @@ export const NavBar = () => {
           <img src={logo} alt="Logo" />
           <img src={white} alt="MES Logo" />
         </Navbar.Brand>
-        <div className="ms-auto d-md-none navbar-text">
+        {/* <div className="ms-auto d-md-none navbar-text">
           <button className="vvd small-button" onClick={handleNavigate}>
             <span className="text-white border-white">Let’s Register</span>
           </button>
-        </div>
+        </div> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav"
           onClick={() => {
             setNavbarOpen(!navbarOpen);
@@ -136,6 +137,15 @@ export const NavBar = () => {
             >
               Team
             </Nav.Link>
+            <Nav.Link
+              href="/our-sponsors"
+              className={
+                activeLink === '/our-sponsors' ? 'active navbar-link' : 'navbar-link'
+              }
+              onClick={() => onUpdateActiveLink('our-sponsors')}
+            >
+              Our Sponsors
+            </Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
@@ -153,10 +163,9 @@ export const NavBar = () => {
                 <img src={navIcon3} alt="" />
               </a>
             </div>
-
-            <button className="vvd" onClick={handleNavigate}>
+            {/* <button className="vvd" onClick={handleNavigate}>
               <span>Let’s Register</span>
-            </button>
+            </button> */}
           </span>
         </Navbar.Collapse>
       </Container>
